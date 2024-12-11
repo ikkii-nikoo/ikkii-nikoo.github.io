@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dropdown Menu with Dark Overlay</title>
+   <style>
+      /* Basic reset */
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      /* Body styling */
+      body {
+         font-family: Arial, sans-serif;
+         overflow-x: hidden;
+         background-color: #f8f9fa; /* Light background color */
+      }
+
+      /* Button styling */
+      .menu-toggle {
+         font-size: 18px;
+         padding: 10px 15px;
+         background-color: #007bff; /* Bootstrap primary color */
+         color: #fff;
+         border: none;
+         cursor: pointer;
+         margin: 20px;
+         position: relative;
+         z-index: 11;
+         border-radius: 5px; /* Rounded corners */
+         transition: background-color 0.3s;
+      }
+
+      .menu-toggle:hover {
+         background-color: #0056b3; /* Darker blue on hover */
+      }
+
+      /* Fullscreen menu overlay */
+      .dropdown-menu {
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%; /* Full height for scrolling */
+         background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+         z-index: 10;
+         opacity: 0;
+         transform: translateY(-30px);
+         transition: opacity 0.4s ease, transform 0.4s ease;
+         padding-top: 60px;
+         text-align: center;
+         border-bottom: 1px solid #e0e0e0; /* Optional border for visual separation */
+         overflow-y: auto; /* Enable vertical scrolling */
+         max-height: 100vh; /* Limit height to viewport height */
+      }
+
+      .dropdown-menu.active {
+         display: block;
+         opacity: 1;
+         transform: translateY(0);
+      }
+
+      .dropdown-menu a {
+         display: block;
+         padding: 15px;
+         font-size: 24px;
+         color: #333;
+         text-decoration: none;
+         transition: background-color 0.3s;
+         position: relative; /* Needed for positioning sub-dropdown */
+      }
+
+      .dropdown-menu a:hover {
+         background-color: #f0f0f0;
+      }
+
+      /* Arrow icon for dropdown */
+      .dropdown-arrow {
+         margin-left: 10px;
+         font-size: 14px;
+         transition: transform 0.3s;
+      }
+
+      /* Sub-menu styling */
+      .sub-dropdown {
+         display: none;
+         position: relative;
+         background-color: rgba(255, 255, 255, 0.9);
+         border: 1px solid #e0e0e0;
+         z-index: 10;
+         padding: 0;
+         white-space: nowrap; /* Prevent text wrapping */
+      }
+
+      .sub-dropdown.active {
+         display: block; /* Show sub-dropdown when active */
+      }
+
+      .sub-dropdown a {
+         padding: 10px 15px;
+         font-size: 20px;
+      }
+
+      /* Dim overlay on background content */
+      .dim-overlay {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+         z-index: 9;
+         display: none;
+         transition: opacity 0.3s ease;
+      }
+
+      .dim-overlay.active {
+         display: block;
+         opacity: 1;
+      }
+
+      /* Content styling */
+      .content {
+         max-width: 800px;
+         text-align: center;
+         padding: 20px;
+         margin: 20px auto;
+         transition: filter 0.3s ease;
+      }
+   </style>
+</head>
+<body>
+   <button class="menu-toggle">☰ Menu</button>
+
+   <div class="dim-overlay"></div>
+
+   <nav class="dropdown-menu">
+      <div class="dropdown-item">
+         <a href="#explore">Explore <span class="dropdown-arrow">▼</span></a>
+         <div class="sub-dropdown">
+            <a href="#sub-item1">Sub Item 1</a>
+            <a href="#sub-item2">Sub Item 2</a>
+            <a href="#sub-item3">Sub Item 3</a>
+            <a href="#sub-item4">Sub Item 4</a>
+            <a href="#sub-item5">Sub Item 5</a>
+            <a href="#sub-item6">Sub Item 6</a>
+         </div>
+      </div>
+      <div class="dropdown-item">
+         <a href="#hire-designer">Hire a Designer <span class="dropdown-arrow">▼</span></a>
+         <div class="sub-dropdown">
+            <a href="#design-sub-item1">Sub Item 1</a>
+            <a href="#design-sub-item2">Sub Item 2</a>
+         </div>
+      </div>
+      <div class="dropdown-item">
+         <a href="#find-jobs">Find Jobs <span class="dropdown-arrow">▼</span></a>
+         <div class="sub-dropdown">
+            <a href="#job-sub-item1">Sub Item 1</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+            <a href="#job-sub-item2">Sub Item 2</a>
+         </div>
+      </div>
+      <a href="#blog">Blog</a>
+   </nav>
+
+   <!-- Content section -->
+   <div class="content">
+      <h2>Main Content Area</h2>
+      <p>This is the main content area. When the menu is active, this area will be dimmed to keep the focus on the menu.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
+   </div>
+   
+   <div class="content">
+      <h2>Another Content Area</h2>
+      <p>This area also remains visible and dimmed when the menu is open.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.</p>
+   </div>
+
+   <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+      const dimOverlay = document.querySelector('.dim-overlay');
+
+      menuToggle.addEventListener('click', () => {
+         dropdownMenu.classList.toggle('active');
+         dimOverlay.classList.toggle('active');
+      });
+
+      // Close menu and remove dim if clicking outside the menu
+      dimOverlay.addEventListener('click', () => {
+         dropdownMenu.classList.remove('active');
+         dimOverlay.classList.remove('active');
+      });
+
+      // Handle clicks on dropdown items to show/hide sub-dropdowns
+      const dropdownItems = document.querySelectorAll('.dropdown-item > a');
+
+      dropdownItems.forEach(item => {
+         item.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            const subDropdown = item.nextElementSibling; // Get the associated sub-dropdown
+            subDropdown.classList.toggle('active'); // Toggle the clicked sub-dropdown
+         });
+      });
+   </script>
+</body>
+</html>

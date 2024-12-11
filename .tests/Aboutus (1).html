@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .about-text {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-top: 20px;
+    }
+    .team-member {
+      text-align: center;
+      margin: 25px;
+    }
+    .team-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    .team-name {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    .purpose-section img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .purpose-section .purpose-text {
+      font-size: 1.1rem;
+      color: #495057;
+    }
+    .purpose-heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 40px;
+      color: #333;
+    }
+    .mission-section img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .mission-section .mission-text {
+      font-size: 1.1rem;
+      color: #495057;
+    }
+    .mission-heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 40px;
+      color: #333;
+    }
+    .faq-heading {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+    .accordion-button {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <h2 class="about-heading">About Us</h2>
+      <p class="about-text">
+        We are a team of enthusiastic and driven individuals dedicated to creating impactful projects and bringing ideas to life. Our combined skills and unique backgrounds enable us to collaborate effectively and push boundaries in everything we do. Together, we aim to make a difference and inspire positive change in our community.
+      </p>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap mt-5">
+      <div class="team-member">
+        <img src="image/lmt.webp" alt="Linn Myat Thu" class="team-photo">
+        <p class="team-name">Linn Myat Thu</p>
+      </div>
+      <div class="team-member">
+        <img src="image/nyo.jpg" alt="Nay Yaung Oo" class="team-photo">
+        <p class="team-name">Nay Yaung Oo</p>
+      </div>
+      <div class="team-member">
+        <img src="image/smun.jpg" alt="S Mun Seng Tsin" class="team-photo">
+        <p class="team-name">S Mun Seng Tsin</p>
+      </div>
+      <div class="team-member">
+        <img src="image/ckk.jpg" alt="Chaw Kay Khaing" class="team-photo">
+        <p class="team-name">Chaw Kay Khaing</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row purpose-section align-items-center mt-4">
+      <div class="col-md-4">
+        <img src="image/purpose.jpg" alt="Our Purpose Image">
+      </div>
+      <div class="col-md-8">
+        <h4 class="purpose-heading">Our Purpose</h4>
+        <p class="purpose-text">
+          Our purpose is to empower and inspire by providing valuable insights, resources, and support to our audience. Through our projects and initiatives, we seek to make a positive impact, foster growth, and create lasting change. Our mission is built on a foundation of dedication, integrity, and a shared vision for a brighter future.
+        </p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row mission-section align-items-center mt-4">
+      <div class="col-md-8">
+        <h4 class="mission-heading">Our Mission</h4>
+        <p class="mission-text">
+          Our mission is to create opportunities for growth and learning through innovative initiatives. We believe in promoting sustainable practices and offering resources that help individuals and communities thrive. By working together, we can build a future where everyone has the opportunity to succeed.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="image/mission.webp" alt="Our Mission Image">
+      </div>
+    </div>
+    <hr class="my-5">
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <h2 class="faq-heading">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          What services do you provide?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We provide project consulting, creative solutions, and community-driven initiatives designed to inspire and create meaningful change.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How can I get involved in your projects?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You can get involved by reaching out through our contact page or participating in our open events. Stay updated by following our social media channels.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Are your services free or paid?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Our basic services are free to the public, but specialized consulting and custom solutions may involve a fee. Contact us for detailed information.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          How can I contact the team for further inquiries?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You can contact us through our website's contact page, via email, or through any of our social media platforms. We are happy to answer any questions and discuss opportunities for collaboration.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          How do you ensure the quality of your projects?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We ensure quality by conducting thorough research, involving experienced team members, and continually evaluating our progress against goals.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>

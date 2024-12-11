@@ -1,0 +1,71 @@
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .about-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-top: 20px;
+  }
+  .team-member {
+    text-align: center;
+    margin: 25px;
+  }
+  .team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  .team-name {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .purpose-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  .purpose-section .purpose-text {
+    font-size: 1.1rem;
+    color: #495057;
+  }
+  .purpose-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 40px;
+    color: #333;
+  }
+  .mission-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  .mission-section .mission-text {
+    font-size: 1.1rem;
+    color: #495057;
+  }
+  .mission-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 40px;
+    color: #333;
+  }
+  .faq-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .accordion-button {
+    font-weight: 500;
+    font-size: 1rem;
+  }

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/assets/styles/css/main.css">
+
+        <link rel="icon" href="/assets/images/favicon-32.png">
+
+        <title>Primiary Class | Introduction to CSS</title>
+
+    </head>
+    
+    <body id="course-body">
+
+        <header>
+
+            <nav id="m-navigation">
+
+                <nav id="m-navigation_container">
+
+                    <button class="menuBar-btn charm--menu-hamburger show-m-dropdown_menu_Btn"></button>
+
+                    <a href="/" id="m-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
+                    <button id="login_btn">Log In</button>
+
+                </nav>
+
+                <nav class="m-dropdown_menu">
+
+                    <div class="m-dropdown_menu-item">
+
+                        <a>
+
+                            Explore
+                            <span class="lsicon--down-filled dropdown-arrow down active"></span>
+                            <span class="lsicon--up-filled dropdown-arrow up"></span>
+                    
+                        </a>
+
+                       <div class="m-dropdown_subMenu">
+
+                            <a class="m-dropdown_subMenu-item">
+
+                                <span class="custom-icon--people"></span>
+                                Primary Class
+                                
+                            </a>
+                            
+                            <a class="m-dropdown_subMenu-item">
+                            
+                                <span class="custom-icon--rising"></span>
+                                Secondary Class
+                            
+                            </a>
+                            
+                            <a class="m-dropdown_subMenu-item">
+                                
+                                <span class="custom-icon--shiny"></span>
+                                Advanced Class
+                            
+                            </a>
+
+                            <div class="divider"></div>
+                            
+                            <a href="/pages/classes/primary-class/Introduction-to-HTML" class="m-dropdown_subMenu-item special-item">Introduction to HTML</a>
+                            <a href="/pages/classes/primary-class/Introduction-to-CSS" class="m-dropdown_subMenu-item special-item">Introduction to CSS</a>
+                            <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="m-dropdown_subMenu-item special-item">The HTML Entrance : Attributes</a>
+                            <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="m-dropdown_subMenu-item special-item">The Tale of CSS: Selectors</a>
+                            <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="m-dropdown_subMenu-item special-item">The Beauty of a Box</a>
+                            <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="m-dropdown_subMenu-item special-item">An Ordinary Life of a Colorist</a>
+
+                       </div>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                       <a href="/pages/find-jobs.html">About</a>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                       <a href="https://discord.gg/zZ8MDVddMR">Community</a>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                        <a href="/pages/blog.html">Blog</a>
+                        
+                    </div>
+
+                 </nav>
+
+                <!-- <div id="m-menuBar_container">
+
+                    <button id="close_menuBar" class="menuBar-btn solar--close-circle-linear"></button>
+
+                    <ul id="m-menuBar">
+
+                        <li class="m-menuBar_item_container"><a href="">HOME</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
+
+                    </ul>
+
+                </div> -->
+
+                <nav id="m-botNavigation_container">
+
+                    <ul id="m-bot_menuBar">
+
+                        <li class="m-bot_menuBar_item_container"><a href="/"><span class="solar--home-2-linear m-bot_menuBar_item_icon"></span>HOME</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/courses.html"><span class="hugeicons--course m-bot_menuBar_item_icon"></span>COURSES</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/quizzes.html"><span class="mynaui--letter-q-square m-bot_menuBar_item_icon"></span>QUIZZES</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/account.html"><span class="heroicons--user m-bot_menuBar_item_icon"></span>ACCOUNT</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </nav>
+
+            <nav id="fat-navigation">
+
+                <nav id="fat-navigation_container">
+
+                    <!-- <button id="show_menuBar_fat" class="menuBar-btn charm--menu-hamburger"></button> -->
+
+
+                    <nav id="fat-menuBar">
+
+                        <ul id="fat-menuBar_container">
+                            <a href="/" id="fat-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
+
+                            <!-- li*6>a.fat-menuBar_container -->
+                                
+                            <li class="fat-menuBar_itemContainer dropdown-host">
+                                
+                                <a href="/pages/classes/" class="fat-menuBar_item">Explore&nbsp;</a> 
+                                <span class="lsicon--down-filled dropdown-arrow down active"></span>
+                                
+                                <div class="space_container">
+
+                                    <div class="dropdown-content">
+
+                                        <a href="/pages/classes/primary-class/" class="dropdown_item">
+            
+                                            <span class="custom-icon--people"></span>
+                                            Primary Class
+                                            
+                                        </a>
+                                        
+                                        <a href="/pages/classes/secondary-class/" class="dropdown_item">
+                                        
+                                            <span class="custom-icon--rising"></span>
+                                            Secondary Class
+                                        
+                                        </a>
+                                        
+                                        <a href="/pages/classes/advanced-class/" class="dropdown_item">
+                                            
+                                            <span class="custom-icon--shiny"></span>
+                                            Advanced Class
+                                        
+                                        </a>
+
+                                        <div class="divider"></div>
+                            
+                                        <a href="/pages/classes/primary-class/Introduction-to-HTML" class="dropdown_item special-item">Introduction to HTML</a>
+                                        <a href="/pages/classes/primary-class/Introduction-to-CSS" class="dropdown_item special-item">Introduction to CSS</a>
+                                        <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="dropdown_item special-item">The HTML Entrance : Attributes</a>
+                                        <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="dropdown_item special-item">The Tale of CSS: Selectors</a>
+                                        <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="dropdown_item special-item">The Beauty of a Box</a>
+                                        <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="dropdown_item special-item">An Ordinary Life of a Colorist</a>
+            
+                                    </div>
+
+                                </div>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/about" class="fat-menuBar_item">About</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="https://discord.gg/zZ8MDVddMR" class="fat-menuBar_item">Community</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/quizzes" class="fat-menuBar_item">Quizzes</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/blog" class="fat-menuBar_item">Blog</a>
+                                
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <button id="login_btn">Log in</button>
+                    <button id="signUp_btn">Sign Up</button>
+
+                    <!-- <div id="invisible_div"></div>  -->
+                    <!-- The div act like its name, invisible. it cant be seen even in inspect mode -->
+
+                    <!-- <ul id="fat-nav_menuBar"> -->
+
+                        <!-- <div id="searchBar-container">
+
+                            <input type="text" placeholder="What are you looking for?" id="searchBar">
+                        
+                        </div> -->
+
+                        <!-- <li class="fat-navBar_item_container active_fat-navBar_item"><a href="/">HOME</a></li>
+                        <li class="fat-navBar_item_container inactive-link limited"><a href="">ABOUT</a></li>
+                        <li class="fat-navBar_item_container inactive-link"><a href="">COURSES</a></li>
+                        <li class="fat-navBar_item_container inactive-link"><a href="">QUIZZES</a></li>
+
+                    </ul> -->
+
+                </nav>
+
+                <!-- <div id="fat-menuBar_container">
+
+                    <button id="close_menuBar_fat" class="menuBar-btn solar--close-circle-linear"></button>
+
+                    <ul id="fat-menuBar">
+
+                        <li class="fat-menuBar_item_container"><a href="">HOME</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
+
+                    </ul>
+
+                </div> -->
+
+            </nav>
+
+        </header>
+
+        <div id="m-invisible_div"></div>
+        <!-- <div id="m-second_invisible_div"></div> -->
+
+        <div class="dim-overlay"></div>
+
+        <main class="courses-page"><div class="courses-page-container">
+
+            <section id="course-mainContent">
+        
+                <div class="course-invisible-div"></div>
+        
+                <header id="courses-header">
+        
+                    <div id="badge-container">
+        
+                        <img src="/assets/images/badge-foundations-fc89cdc6.svg" alt="" id="introduction">
+        
+                    </div>
+        
+                    <div id="text-container">
+        
+                        <h1 class="heading">Introduction to CSS and Styling</h1>
+                        <h4 class="sub_heading">Level 0 : The Foundation Level</h4>
+        
+                    </div>
+        
+                </header>
+        
+                <article id="main-article">
+        
+                    <div class="box">
+        
+                        <h1 class="heading" id="introduction-css">Introduction</h1>
+                        <p class="content">Imagine a world where every website looked plain and boring, with no colors, layouts, or fancy designs. That’s where CSS (Cascading Style Sheets) comes in! It's like the artist's palette for web developers, turning dull text and images into vibrant, user-friendly websites.</p>
+        
+                        <h4 class="sub_heading">Why CSS is Essential</h4>
+                        <div class="divider"></div>
+                        <p class="content">CSS is the design engine behind almost every website you visit. Here's why it's indispensable:</p>
+                        <ul>
+                            <li class="content">Separation of Style and Content: CSS allows you to keep your HTML clean and focused on structure, while CSS handles the visuals.</li>
+                            <li class="content">Customizable Designs: With CSS, you can create unique, consistent styles across all your pages.</li>
+                            <li class="content">Responsive Websites: CSS makes it easy to adjust your designs for different screen sizes, ensuring your site looks great on any device.</li>
+                        </ul>
+        
+                        <h4 class="sub_heading">A Quick History of CSS</h4>
+                        <div class="divider"></div>
+                        <p class="content">CSS was born in 1994 when Håkon Wium Lie, working at CERN (the birthplace of the World Wide Web), wanted a way to style webpages easily. The first official version of CSS was released in 1996, and it has evolved dramatically since then, with CSS3 introducing features like animations and responsive design.</p>
+        
+                        <h4 class="sub_heading">How Does CSS Work?</h4>
+                        <div class="divider"></div>
+                        <p class="content">At its core, CSS works by applying <strong>rules</strong> to HTML elements. Each rule consists of:</p>
+                        <ul>
+                            <li class="content">A <strong>selector</strong> (to identify the element to style).</li>
+                            <li class="content">A <strong>declaration block</strong> (defining how to style it).</li>
+                        </ul>
+                        <img class="code" src="/assets/images/code1.png" alt="">
+                        <figcaption class="caption">This rule makes all <code>&lt;h1&gt;</code> headings blue and centers them.</figcaption>
+        
+                    </div>
+        
+                    <div class="box">
+        
+                        <h1 class="heading">What Makes CSS Special?</h1>
+                        <p class="content">CSS has some unique features that make it a powerful tool:</p>
+                        <ul>
+                            <li class="content"><strong>Cascading Nature:</strong> Styles are applied in a specific order, allowing flexibility and control over designs.</li>
+                            <li class="content"><strong>Versatility:</strong> From simple text styling to complex layouts and animations, CSS does it all.</li>
+                            <li class="content"><strong>Ease of Use:</strong> With a few lines of code, you can make dramatic changes to your webpage.</li>
+                        </ul>
+        
+                        <h4 class="sub_heading">A Peek Into Styling</h4>
+                        <div class="divider"></div>
+                        <p class="content">CSS can handle:</p>
+                        <ul>
+                            <li class="content"><strong>Colors and Fonts:</strong> Define the visual identity of your site.</li>
+                            <li class="content"><strong>Layouts:</strong> Control spacing, alignment, and organization.</li>
+                            <li class="content"><strong>Basic Interactions:</strong> Add hover effects and transitions.</li>
+                        </ul>
+                        <img class="code" src="/assets/images/code2.png" alt="">
+        
+                    </div>
+        
+                    <div class="box">
+        
+                        <h1 class="heading">What’s Next?</h1>
+                        <p class="content">Now that you’ve been introduced to the magic of CSS, it’s time to explore deeper topics. Get ready to learn about:</p>
+                        <ul>
+                            <li class="content">Detailed CSS selectors.</li>
+                            <li class="content">Advanced properties for layouts and effects.</li>
+                            <li class="content">Practical examples to build your styling skills.</li>
+                        </ul>
+                        <p class="content">CSS is your gateway to designing beautiful, functional websites—so let’s keep exploring!</p>
+        
+                    </div>
+        
+                </article>
+        
+                <div id="button-nest">
+        
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" role="img" aria-labelledby="am12m91v90xkgi0itwk2vy2u6d8kt1oj arc2t8aiegkudbwswcwwjlfegkdgzi87" class="h-8 w-8 pr-2">
+                            <title id="am12m91v90xkgi0itwk2vy2u6d8kt1oj">View course</title>
+                            <desc id="arc2t8aiegkudbwswcwwjlfegkdgzi87">Go to course page</desc>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path>
+                        </svg>
+                        View Course
+                    </button>
+        
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" role="img" aria-labelledby="ajsegabyqo7691q0di5316fhbm77n71j ar9xarcfv50727szll3k3pk7l6z8s9j6" class="h-8 w-8 pr-2">
+                            <title id="ajsegabyqo7691q0di5316fhbm77n71j">Next lesson</title>
+                            <desc id="ar9xarcfv50727szll3k3pk7l6z8s9j6">Go to next lesson</desc>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Next Lesson
+                    </button>
+        
+                </div>
+        
+            </section>
+        
+            <section id="course-content">
+        
+                <div id="content-container">
+        
+                    <h3 class="content-heading">Lesson Contents</h3>
+        
+                    <ul id="content-item-container">
+        
+                        <li class="content-item"><a href="#introduction">Introduction</a></li>
+        
+                        <ul class="content-item-sub">
+        
+                            <li><a href="#introduction-css">Introduction to CSS</a></li>
+        
+                        </ul>
+        
+                        <li class="content-item"><a href="#lesson-overview">Lesson Overview</a></li>
+                        <li class="content-item"><a href="#what-makes-css-special">What Makes CSS Special?</a></li>
+        
+                    </ul>
+        
+                </div>
+        
+            </section>
+        
+        </div>
+        
+
+            <div id="nothing-div"></div>
+
+        </main>
+    
+        <section id="thepinkbox"></section>
+        
+        <footer>
+
+            <div class="footer-graphic_container">
+
+                <img src="/assets/images/footer-graphics.png" alt="no image was founded">
+
+            </div>
+
+            <div id="content-wrapper">
+
+                <a href="/"><img id="branding" src="/assets/images/branding.png"></a>
+                
+                <ul id="footer-menuBar">
+
+                    <li class="footer-menuBar-item item1"><a href="/pages/about">Contact</a></li>
+                    <li class="footer-menuBar-item item2"><a href="/pages/support">Support</a></li>
+                    <li class="footer-menuBar-item item3"><a href="/pages/blog">Blog</a></li>
+                    <li class="footer-menuBar-item item4"><a href="/pages/bio">BIO</a></li>
+                    <li class="footer-menuBar-item item5"><a href="/pages/features">Features</a></li>
+                    <li class="footer-menuBar-item item6"><a href="/pages/credits">Credits</a></li>
+                    <li class="footer-menuBar-item item7"><a href="/pages/behind-the-scenes">Behind the Scenes</a></li>
+    
+                </ul>
+    
+                <ul id="footer-social_menuBar">
+    
+                    <li class="footer-menuBar-item"><a href=""><span class="bxl--instagram"></span></a></li>
+                    <li class="footer-menuBar-item"><a href=""><span class="bxl--facebook"></span></a></li>
+                    <li class="footer-menuBar-item"><a href=""><span class="proicons--x-twitter"></span></a></li>
+    
+                </ul>
+
+            </div>
+
+            <div id="legal">
+
+                <span>LearnerX © 2024</span>
+                <span>All Creative Rights Protected by LearnerX</span>
+
+            </div>
+
+        </footer>
+
+        <div id="m-bot-invisible_div"></div>
+
+        <script src="/assets/scripts/script.js"></script>
+    
+    </body>
+    
+</html>

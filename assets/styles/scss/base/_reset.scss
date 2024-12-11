@@ -1,0 +1,30 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;/* Firefox */
+
+    ::-webkit-scrollbar { 
+
+        display: none;  /* Safari and Chrome */
+    
+    }
+
+}
+
+button {
+
+    border: none;
+
+}
+
+a {
+
+    color: #000;
+    text-decoration: none;
+
+}

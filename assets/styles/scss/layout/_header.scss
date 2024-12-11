@@ -1,0 +1,682 @@
+
+header {
+
+    position: relative;
+
+    #m-navigation {
+
+        // to whoever reading this, "m" stands for mobile in case you didnt know(ofc you didnt know, you're welcome)
+
+        @media screen and (min-width: 1060px) {
+
+            display: none;
+
+        }
+
+        #m-navigation_container {
+
+            padding: 25px;
+            z-index: 99;
+            display: flex;
+            background-color: white;
+            position: fixed;
+            align-items: center;
+            width: 100%;
+
+            .show-m-dropdown_menu_Btn {
+
+                padding: 10px;
+                background-color: transparent;
+
+            }
+
+            #m-nav_branding {
+
+                margin: 0 20px;
+                display: flex;
+                align-items: center;
+
+                #logo {
+
+                    width: 90px;
+
+                }
+
+            }
+
+            #login_btn {
+
+                position: absolute;
+                right: 15px;
+                padding: 10px 25px;
+                background-color: #111;
+                color: white;
+                font-size: 13.5px;
+                border-radius: 30px;
+                font-weight: 500;
+                font-family: "Poppins";
+                // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+            }
+
+        }
+
+        .m-dropdown_menu {
+
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-height: 100vh;
+            background-color: #FFF;
+            z-index: 10;
+            transform: translateY(-30px);
+            transition: opacity 0.4s ease, transform 0.35s ease;
+            padding-top: 78px;
+            border-bottom: 1px solid #e0e0e0; 
+            overflow-y: auto;
+            display: none;
+            opacity: 0; 
+  
+            &.active {
+    
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                
+             }
+
+            .m-dropdown_menu-item {
+
+                a {
+     
+                    font-weight: 500;
+                    display: block;
+                    padding: 15px;
+                    font-size: 18px;
+                    color: #333;
+                    text-decoration: none;
+                    transition: background-color 0.3s;
+                    position: relative;
+     
+                    &:hover {
+
+                        background-color: rgb(245, 245, 245);
+                    
+                    }
+
+                      .dropdown-arrow {
+
+                        display: none;
+                        position: relative;
+                        top: 3px;
+
+                        &.active {
+
+                            display: inline-block;
+
+                        }
+
+                      }
+                 
+                 }
+
+
+                .m-dropdown_subMenu {
+
+                    display: none;
+                    position: relative;
+                    background-color: rgba(255, 255, 255, 0.9);
+                    z-index: 10;
+                    padding: 0;
+                    white-space: nowrap;
+                    
+                    .m-dropdown_subMenu-item {
+                    
+                        font-family: "Poppins";
+                        padding: 10px 15px;
+                        font-size: 17px;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        gap: .5em;
+                    
+                    }
+
+                    .special-item {
+
+                        font-family: "Fredoka";
+                        font-size: 15px;
+                        padding: 12px 20px;
+                        font-weight: 500;
+
+                    }
+
+                    .divider {
+
+                        margin: 20px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+                    }
+
+                    &.active {
+
+                        display: block;
+    
+                    }
+
+                }
+
+            }
+
+        }
+
+        // Just a discontinued feature
+
+        // #m-menuBar_container {
+
+        //     display: none;
+        //     position: fixed;    
+        //     background-color: black;
+        //     width: 100%;
+        //     height: 100vh;
+        //     color: white;
+
+        //     .menuBar-btn {
+
+        //         background-color: rgba(0, 0, 0, 0);
+        //         position: relative;
+        //         z-index: 99;
+        //         float: right;
+        //         margin: 45px;
+        //         padding: 10px;
+
+        //     }
+
+        //     #m-menuBar {
+
+        //         position: absolute;
+        //         list-style: none;
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //         gap: 3em;
+        //         align-items: center;
+        //         width: 100%;
+        //         height: 100vh;
+
+        //         .m-menuBar_item_container {
+
+        //             a {
+
+        //                 font-size: 24px;
+        //                 color: white;
+
+        //             }
+
+        //         }
+
+        //     }
+
+        // }
+
+        #m-botNavigation_container {
+
+            z-index: 8;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-top: 30px;
+
+            #m-bot_menuBar {
+
+                padding-bottom: 35px;
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+
+                .m-bot_menuBar_item_container {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                    width: 60px;
+                    height: 25px;
+                    
+                    a {
+
+                        font-weight: 500;
+
+                    }
+
+                    .m-bot_menuBar_item_icon {
+
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-bottom: 5px;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    #fat-navigation {
+
+        // to whoever reading this, "fat" stands for nothing, I mean it is fat version of m, so..
+
+        display: none;
+
+        @media screen and (min-width: 1060px) {
+
+            display: block;
+
+        }
+
+        #fat-navigation_container {
+
+            z-index: 99;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            position: fixed;
+            align-items: center;
+            width: 100%;
+            padding: 25px;
+
+            #fat-menuBar {
+
+                #fat-menuBar_container {
+
+                    display: flex;
+                    align-items: center;
+                    gap: 3.5em;
+
+                    #fat-nav_branding {
+        
+                        margin: 0 20px;
+                        display: flex;
+                        align-items: center;
+        
+                        #logo {
+        
+                            width: 110px;
+        
+                        }
+        
+                    }
+
+                    .fat-menuBar_itemContainer {
+
+                        list-style: none;
+
+                        .fat-menuBar_item {
+
+                            font-weight: 500;
+                            cursor: pointer;
+                            font-size: 17px;
+
+                        }
+
+                        &:hover {
+
+                            .fat-menuBar_item {
+
+                                color: #8d86ab;
+
+                            }
+                            
+                        }
+
+                    }
+
+                    .dropdown-host {
+
+                        position: relative;
+
+                        span {
+
+                            cursor: pointer;
+                            position: absolute;
+                            top: 4px;
+
+                        }
+
+                        .space_container {
+
+                            display: none;
+
+                            .dropdown-content {
+    
+                                padding: 20px;
+                                display: flex;
+                                gap: 1em;
+                                width: 250px;
+                                flex-direction: column;
+                                background-color: #FFF;
+                                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+                                .dropdown_item {
+                            
+                                    font-family: "Poppins";
+                                    font-size: 15.5px;
+                                    font-weight: 500;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: .5em;
+                                    padding: 5px 0;
+
+                                    &:hover {
+        
+                                        color: #8d86ab;
+                                        
+                                    }  
+
+                                    span {
+
+                                        position: initial;
+
+                                    }
+                                
+                                }
+
+                                .special-item {
+
+                                    font-family: "Fredoka";
+                                    font-size: 14px;
+                                    font-weight: 400;
+
+                                }
+
+                                .divider {
+
+                                    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+                                }
+        
+                            }
+
+                        }
+
+                        &:hover {
+
+                            .space_container {
+        
+                                display: block;
+                                position: absolute;
+                                padding-top: 30px;
+                
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+            #login_btn {
+
+                padding: 10px 25px;
+                background-color: #111;
+                color: white;
+                font-size: 13.5px;
+                border-radius: 30px;
+                font-weight: 500;
+                font-family: "Poppins";
+
+            }
+
+            #signUp_btn {
+
+                position: absolute;
+                right: 115px;
+                padding: 10px 25px;
+                background-color: transparent;
+                font-size: 13.5px;
+                border-radius: 30px;
+                font-weight: 500;
+                font-family: "Poppins";
+                // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+            }
+
+            #invisible_div {
+
+                width: 150px;
+
+                @media screen and (min-width: 1025px) {
+        
+                    // width: 200px;
+                    // width: 900px;
+                    width: clamp(12.5rem, -95.557rem + 168.675vw, 56.25rem);
+        
+                }
+
+            }
+
+            #fat-nav_menuBar {
+
+                margin-right: 20px;
+                list-style: none;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                #searchBar-container {
+
+                    width: 400px;
+
+                    #searchBar {
+
+                        width: 100%;
+                        margin: 20px;
+                        font-size: 16px;
+                        padding: 15px 30px;
+                        border-radius: 35px;
+                        background-color: #F3F3F6;
+                        border: 1px solid #F3F3F6;
+                        
+                        &::-ms-input-placeholder {
+
+                            font-weight: 400;
+
+                        }
+                        
+                        &::-moz-placeholder {
+                            
+                            font-weight: 400;
+
+                        }
+                        
+                        &::-webkit-input-placeholder {
+
+                            font-weight: 400;
+
+                        }
+
+                    }
+
+                }
+                
+                .fat-navBar_item_container {
+
+                    a {
+                        
+                        font-weight: 400;
+                        font-size: 18px;
+                        transition: 0.5s;
+
+                        &:hover {
+
+                            padding-bottom: 5px;
+                            color: #000;
+
+                        }
+
+                    }
+
+                }
+
+                .inactive-link {
+
+                    a {
+
+                        color: gray;
+
+                    }
+
+                }
+
+                .limited {
+
+                    display: none;
+
+                    @media screen and (min-width: 1025px) {
+            
+                        display: block;
+            
+                    }
+            
+
+                }
+
+            }
+
+            .menuBar-btn {
+
+                margin: 20px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0);
+
+                @media screen and (min-width: 1025px) {
+        
+                    display: none;
+        
+                }
+
+            }
+        }
+        
+        // #fat-menuBar_container {
+
+        //     display: none;
+        //     position: fixed;
+        //     background-color: black;
+        //     width: 100%;
+        //     height: 100vh;
+        //     color: white;
+
+        //     .menuBar-btn {
+
+        //         background-color: rgba(0, 0, 0, 0);
+        //         position: relative;
+        //         z-index: 99;         
+        //         margin: 55px 65px;
+        //         padding: 10px;
+
+        //     }
+
+        //     #fat-menuBar {
+
+        //         position: absolute;
+        //         bottom: 0px;
+        //         list-style: none;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //         gap: 3em;
+        //         align-items: center;
+        //         width: 100%;
+        //         height: 100vh;
+        //         display: flex;
+
+        //         .fat-menuBar_item_container {
+
+        //             a {
+
+        //                 font-size: 24px;
+        //                 color: white;
+
+        //             }
+
+        //         }
+
+        //     }
+
+        // }
+
+    }
+
+}
+
+// Dependencies for the header ( Dependencies in my case would mean something that is needed in order to function fully, you could possibly refer this as "framework" but internal )
+
+.inactive_view {
+
+    filter: invert(55%) sepia(20%) saturate(18%) hue-rotate(59deg) brightness(89%) contrast(88%);
+    transition: 0.5s;
+
+    &:hover {
+
+        filter: invert(0%) sepia(98%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(100%);
+
+    }
+
+}
+
+#m-invisible_div {
+
+    height: 78px;
+
+}
+
+#m-second_invisible_div {
+
+    @media screen and (min-width: 1021px) {
+
+        display: none;
+    
+    }
+
+}
+
+#m-bot-invisible_div {
+
+    height: 90px;
+
+    @media screen and (min-width: 1021px) {
+
+        display: none;
+    
+    }
+
+}
+
+
+.dim-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9;
+    display: none;
+    transition: opacity 0.3s ease;
+
+    &.active {
+        display: block;
+        opacity: 1;
+     }
+ 
+}

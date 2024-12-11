@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000;
+        }
+
+        /* Footer Bar Styles */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        footer .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        footer .footer-links a:hover {
+            background-color: #444;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            footer .footer-logo {
+                margin-bottom: 20px;
+            }
+
+            footer .footer-links a {
+                padding: 8px 12px;
+            }
+
+            footer .social-icons a {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer .footer-links a {
+                padding: 6px 10px;
+            }
+
+            footer .social-icons a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+            My Website
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" class="facebook">FB</a>
+            <a href="#" class="twitter">TW</a>
+            <a href="#" class="instagram">IG</a>
+        </div>
+    </footer>
+
+</body>
+</html>

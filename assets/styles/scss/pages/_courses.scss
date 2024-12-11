@@ -1,0 +1,452 @@
+
+.courses-page {
+
+    justify-content: center;
+    display: flex;
+
+    .courses-page-container {
+    
+        width: 100%;
+        
+        @media screen and (min-width: 1280px) {
+    
+            margin-left: -200px;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+    
+        }
+
+        @media screen and (max-height: 835px) {
+
+            margin-left: 0;
+
+        }
+    
+        #course-mainContent {
+        
+            @media screen and (min-width: 1024px) {
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+            }
+    
+            .course-invisible-div {
+        
+                @media screen and (min-width: 1024px) {
+                
+                    width: 100%;
+                    width: 100%;
+                    height: 10vh;
+                    height: 5vh;
+
+                }
+        
+            }
+        
+            #courses-header {
+        
+                text-align: center;
+                max-width: 1000px;
+                padding: 10px;
+                padding: 40px;
+                padding-bottom: 40px;
+                padding-bottom: 60px;
+                padding-bottom: clamp(2.5rem, 1.931rem + 2.845vw, 3.75rem);
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                gap: 1em;
+        
+                @media screen and (min-width: 1280px) {
+        
+                    margin-left: -100px;
+                    padding-bottom: 40px;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+        
+                }
+        
+                #badge-container {
+        
+                    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+                    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+                    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+                    border-radius: 9999px;
+                    width: 7rem;
+                    height: 7rem;
+        
+                    img {
+        
+                        padding: 0.625rem;
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                        // vertical-align: middle;
+                        filter: invert(86%) sepia(100%) saturate(0%) hue-rotate(114deg) brightness(102%) contrast(101%);
+                        filter: invert(43%) sepia(20%) saturate(2858%) hue-rotate(295deg) brightness(96%) contrast(92%);
+                        filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+        
+                    }
+        
+                }
+        
+                #text-container {
+        
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5em;
+                    border-radius: 15px;
+        
+                    @media screen and (min-width: 1280px) {
+        
+                        align-items: start;
+                        padding-left: 10px;
+            
+                    }
+        
+                    .heading {
+        
+                        font-family: "Poppins";
+                        font-size: 20px;
+                        font-weight: 400;
+        
+                        @media screen and (min-width: 444px) {
+            
+                            br {
+        
+                                display: none;
+        
+                            }
+        
+                        }
+                        
+                    }
+        
+                    .sub_heading {
+            
+                        font-size: 19px;
+                        text-align: center;
+        
+                        @media screen and (max-width: 340px) {
+            
+                            font-size: 17px;
+        
+                        }
+            
+                    }
+                    
+                }
+        
+            }
+        
+            #main-article {
+    
+                line-height: 30px;
+                letter-spacing: 1px;
+                letter-spacing: 0px;
+                letter-spacing: clamp(0rem, -0.028rem + 0.142vw, 0.063rem);
+                max-width: 1000px;
+                padding: 20px;
+                padding: 200px;
+                padding: clamp(1.25rem, -3.871rem + 25.605vw, 12.5rem);
+                padding-top: 0;
+                padding-bottom: 0;
+        
+                @media screen and (min-width: 1024px) {
+                
+                    padding: 200px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    
+                }
+        
+                .divider {
+                    
+                    margin: 0 auto;
+                    margin-top: clamp(0rem, -0.568rem + 2.841vw, 1.25rem);
+                    margin-bottom: clamp(0rem, -0.568rem + 2.841vw, 1.25rem);
+                    margin: 10px auto;
+                    width: 100%;
+                    max-width: 1000px;
+                    height: 1.3px;
+                    background-color: #000;
+            
+                }
+        
+                .box {
+        
+                    padding: 10px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+        
+                    .heading {
+        
+                        font-size: 22px;
+                        font-weight: 400;
+                        font-family: "Poppins";
+                        margin-bottom: clamp(0.625rem, 0.057rem + 2.841vw, 1.875rem);
+        
+                    }
+        
+                    .sub_heading {
+        
+                        font-weight: 400;
+                        font-size: 17px;
+                        font-family: "Poppins";
+        
+                    }
+        
+                    img {
+        
+                        margin-bottom: 20px;
+                        border-radius: 20px;
+        
+                    }
+
+                    .code {
+
+                        width: 100%;
+                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+
+                    }
+        
+                    ul {
+        
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+        
+                    }
+                
+                    .caption {
+
+                        font-style: italic;
+                        text-align: center;
+                        margin-bottom: clamp(0.625rem, 0.057rem + 2.841vw, 1.875rem);
+
+                    }
+        
+                    .content {
+        
+                        margin-bottom: 10px;
+                        margin-bottom: 30px;
+                        margin-bottom: clamp(0.625rem, 0.057rem + 2.841vw, 1.875rem);
+                        font-size: 18px;
+                        font-size: 19px;
+          
+                    }
+        
+                    .more-content {
+        
+                        font-size: 11px;
+                        font-size: clamp(0.688rem, 0.545rem + 0.71vw, 1rem);
+                        margin-bottom: 20px;
+        
+                        a {
+        
+                            color: #ea4c89;
+                            text-decoration: underline;
+                            font-weight: 500;
+        
+                        }
+        
+                    }
+        
+                }
+        
+            }
+        
+            #button-nest {
+        
+                display: flex;
+                margin: 0 auto;
+                gap: 0.5em;
+                padding-top: 0;
+                padding-bottom: 0;
+                width: 100%;
+                max-width: 1000px;
+                padding: 40px;
+                padding: 220px;
+                padding: clamp(2.5rem, -2.614rem + 25.568vw, 13.75rem);
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: 50px;
+        
+                @media screen and (min-width: 1280px) {
+    
+                    display: none;
+                    margin-bottom: 150px;
+    
+                }
+        
+                button {
+        
+                    background-color: #111;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    width: 100%;
+        
+                    svg {
+        
+                        width: 1rem;
+                        margin-right: 5px;
+                        
+                    }
+        
+                }
+        
+            }
+    
+        }
+    
+        #course-content {
+    
+            margin-top: 100px;
+            min-width: 285px;
+            height:  100%;
+            flex-direction: column;
+            display: none;
+        
+            @media screen and (min-width: 1280px) and (min-height: 835px) {
+    
+                display: flex;
+    
+            }
+    
+            #content-container {
+    
+                margin-bottom: 120px;
+                position: sticky;
+                top: 184.5px;
+        
+                #button-nest2 {
+            
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    gap: 0.5em;
+                    margin-top: 50px;
+            
+                    @media screen and (max-width: 1280px) {
+        
+                        display: none;
+        
+                    }
+            
+                    button {
+            
+                        background-color: #111;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 40px;
+                        width: 100%;
+            
+                        svg {
+            
+                            width: 1rem;
+                            margin-right: 5px;
+                            
+                        }
+            
+                    }
+    
+                }
+    
+                .content-heading {
+    
+                    font-weight: 400;
+                    font-size: 20px;
+                    font-family: "Poppins";
+    
+                }
+    
+                #content-item-container {
+    
+                    font-size: 20px;
+                    border-left: 3px solid #666;
+                    margin-top: 30px;
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    list-style-type: none;
+    
+                    a {
+    
+                        font-weight: 400;
+                        color: #666;
+    
+                        &:hover {
+    
+                            text-decoration: underline;      
+                            color: #000;                  
+    
+                        }
+    
+                    }
+    
+                    .content-item-sub {
+    
+                        padding-left: 20px;
+                        border-left: 2px solid #666;
+                        list-style-type: none;
+                        padding-left: 20px;
+                        
+                        a {
+    
+                            font-size: 17px;
+                            color: #666;
+    
+                            &:hover {
+        
+                                text-decoration: underline;      
+                                color: #000;                  
+        
+                            }
+    
+                        }
+                        
+                    }
+    
+                }
+    
+            }
+
+            .extra-container {
+
+                width: 100%;
+                height: 1774px;
+
+            }
+    
+        }
+    
+    }
+
+}
+
+#course-body {
+
+    #thepinkbox {
+            
+        @media screen and (max-width: 1280px) {
+
+            display: none;
+
+        }       
+
+    }
+
+}

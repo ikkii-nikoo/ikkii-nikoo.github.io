@@ -1,0 +1,20 @@
+
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/variables';
+@use 'base/mixins';
+
+@use 'components/buttons';
+@use 'components/forms';
+@use 'components/icons';
+
+@use 'layout/grid';
+@use 'layout/header';
+@use 'layout/footer';
+
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/bts';
+@use 'pages/courses';
+@use 'pages/quizz';
+@use 'pages/classes';

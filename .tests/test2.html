@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Only Text Color Change</title>
+<style>
+    /* Container with dynamic background */
+    .container {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border-radius: 5px;
+        color: white; /* Initial text color */
+        background-color: #000; /* Sample background color */
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Blend text color for readability */
+    .text {
+        mix-blend-mode: difference; /* Adjust to work with mix-blend-mode */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <p class="text">Dynamic Text Color</p>
+</div>
+
+</body>
+</html>
