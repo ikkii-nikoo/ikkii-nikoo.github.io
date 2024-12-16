@@ -75,8 +75,9 @@
                 height: 472px;
                 border-radius: 20px;
                 text-align: center;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
                 position: relative;
+                
 
                 @media screen and (max-width: 1001px) and (min-width: 600px) {
                 
@@ -139,6 +140,7 @@
 
                     button {
 
+                        cursor: pointer;
                         background-color: #FFF;
                         font-size: 17px;
                         font-weight: 500;

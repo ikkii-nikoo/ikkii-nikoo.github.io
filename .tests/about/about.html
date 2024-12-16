@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPTEC</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left a {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .left a:hover {
+            color: #ddd;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .right a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .right a:hover {
+            color: #ddd;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .content-left {
+            width: 50%;
+        }
+
+        .content-left h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .content-left p {
+            line-height: 1.5;
+        }
+
+        .content-right {
+            width: 50%;
+            position: relative;
+        }
+
+        .content-right img {
+            width: 100%;
+            height: auto;
+             }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="right">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+            <h1>Welcome to UPTEC</h1>
+            <p>Your one-stop solution for all technology needs. We provide top-notch services to help you grow your business.</p>
+        </div>
+        <div class="content-right">
+            <img src="your-image-url.jpg" alt="UPTEC Image">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 UPTEC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

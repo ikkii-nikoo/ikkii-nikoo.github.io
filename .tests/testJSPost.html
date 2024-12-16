@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Content with Code Snippet</title>
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main article container */
+        article {
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Styling for the boxes around content */
+        .box {
+            margin-bottom: 20px;
+        }
+
+        /* Heading and content styling */
+        .heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #e74c3c;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        /* Code container for styled snippets */
+        .code-container {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .code-header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .code-header span {
+            background: #e74c3c;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .code-header span:nth-child(2) {
+            background: #f1c40f;
+        }
+
+        .code-header span:nth-child(3) {
+            background: #2ecc71;
+        }
+
+        .code-header .title {
+            font-size: 1rem;
+            color: #eee;
+        }
+
+        pre {
+            margin: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #00d4ff;
+        }
+
+        pre code {
+            display: block;
+        }
+
+        pre::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        pre::-webkit-scrollbar-thumb {
+            background: #3498db;
+            border-radius: 5px;
+        }
+
+        pre::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <article id="main-article">
+        <div class="box">
+            <h1 class="heading" id="introduction-css">Introduction</h1>
+            <p class="content">Now, just picture a site striking so entirely mundane that it's devoid of colors, layouts, and styles—anything resembling a site. That's where CSS Level 0 comes! Like the palette of an artist, CSS turns plain text and images into a user-friendly website.</p>
+        </div>
+
+        <div class="box">
+            <h1 class="heading">The Need For CSS</h1>
+            <p class="content">CSS is the styling engine behind almost every site you visit. Here are the reasons it becomes inescapable:</p>
+            <ul>
+                <li class="content"><strong>Separation of Style and Content</strong>: With CSS, your HTML can stay out of the way, focusing on structure, while CSS handles all the visuals.</li>
+                <li class="content"><strong>Design Personalization</strong>: CSS allows for the development of unique styles consistent throughout the entire website.</li>
+                <li class="content"><strong>Websites Are Now Responsive</strong>: CSS design changes can now easily fit any device with screens of different widths, thus ensuring your website still looks appealing.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h1 class="heading">Groovy History of CSS</h1>
+            <p class="content">CSS was born in 1994 when Håkon Wium Lie happened to be working in CERN (the birthplace of World Wide Web) and wanted a simple way of styling web pages. The first official version of CSS was released in 1997, and since then it has seen massive adoption, with CSS3 introducing features such as animations and responsive design.</p>
+        </div>
+
+        <div class="box">
+            <h1 class="heading">CSS—How It Works</h1>
+            <p class="content">Fundamentally, CSS contains rules that apply to HTML elements. Each rule has two components:</p>
+            <ul>
+                <li class="content"><strong>A selector</strong>: Identifies the element to style.</li>
+                <li class="content"><strong>A declaration block</strong>: Defines how to style it.</li>
+            </ul>
+            <p class="content">For example, this rule makes all &lt;h1&gt; headings blue and centers them:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="title">index.css</div>
+                </div>
+                <pre><code>h1 { color: blue; text-align: center; }</code></pre>
+            </div>
+        </div>
+
+        <div class="box">
+            <h1 class="heading">Why CSS?</h1>
+            <p class="content">There are indeed unique features in CSS, which makes this tool very powerful:</p>
+            <ul>
+                <li class="content"><strong>Cascading</strong>: The styles are applied in a certain order and allow flexibility and design control.</li>
+                <li class="content"><strong>Versatile</strong>: From simple text styling to very complex layouts and animations, CSS can do them all.</li>
+                <li class="content"><strong>Ease of use</strong>: A few lines of code can cause huge changes to your webpage.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h1 class="heading">A Peek Into Styling</h1>
+            <p class="content">CSS can do the following:</p>
+            <ul>
+                <li class="content"><strong>Colors and Fonts</strong>: Define visual identities with distinctive colors and text styles.</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>

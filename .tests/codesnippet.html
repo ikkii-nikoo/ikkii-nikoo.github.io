@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Code Snippet</title>
+    <style>
+
+        .code-container {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 700px;
+            overflow: hidden;
+        }
+
+        .code-header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .code-header span {
+            background: #e74c3c;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .code-header span:nth-child(2) {
+            background: #f1c40f;
+        }
+
+        .code-header span:nth-child(3) {
+            background: #2ecc71;
+        }
+
+        .code-header .title {
+            font-size: 1rem;
+            color: #eee;
+        }
+
+        pre {
+            margin: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #00d4ff;
+        }
+
+        pre code {
+            display: block;
+        }
+
+        pre::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        pre::-webkit-scrollbar-thumb {
+            background: #3498db;
+            border-radius: 5px;
+        }
+
+        pre::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="code-container">
+        <div class="code-header">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="title">index.html</div>
+        </div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+</body>
+</html>

@@ -1,74 +1,363 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Under Construction</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
 
-        body {
-            background-color: #ffcc00;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+    <head>
 
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            width: 100%;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .construction-banner {
-            background-color: #ff5722;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
+        <link rel="stylesheet" href="/assets/styles/css/main.css">
 
-        .warning-sign {
-            font-size: 50px;
-        }
+        <link rel="icon" href="/assets/images/favicon-32.png">
 
-        h1 {
-            font-size: 2.5em;
-            color: #fff;
-            margin: 20px 0;
-        }
+        <title>Learner X - The Somewhere You Have Always Belonged to</title>
 
-        p {
-            font-size: 1.2em;
-            color: #fff;
-        }
+    </head>
 
-        .under-construction-image img {
-            max-width: 100%;
-            border-radius: 10px;
-            border: 5px dashed #333;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="construction-banner">
-            <div class="warning-sign">🚧</div>
-            <h1>Oops! This page is under construction.</h1>
-            <p>We are working hard to bring this page to life. Stay tuned!</p>
-        </div>
-        <div class="under-construction-image">
-            <img src="https://via.placeholder.com/400x200.png?text=Under+Construction" alt="Under Construction">
-        </div>
-    </div>
-</body>
+    <body class="post-body">
+
+        <header>
+
+            <nav id="m-navigation">
+
+                <nav id="m-navigation_container">
+
+                    <button class="menuBar-btn charm--menu-hamburger show-m-dropdown_menu_Btn"></button>
+
+                    <a href="/" id="m-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
+                    <button id="login_btn" class="login_btn">Log In</button>
+
+                </nav>
+
+                <nav class="m-dropdown_menu">
+
+                    <div class="m-dropdown_menu-item">
+
+                        <a>
+
+                            Explore
+                            <span class="lsicon--down-filled dropdown-arrow down active"></span>
+                            <span class="lsicon--up-filled dropdown-arrow up"></span>
+                    
+                        </a>
+
+                       <div class="m-dropdown_subMenu">
+
+                            <a class="m-dropdown_subMenu-item">
+
+                                <span class="custom-icon--people"></span>
+                                Primary Class
+                                
+                            </a>
+                            
+                            <a class="m-dropdown_subMenu-item">
+                            
+                                <span class="custom-icon--rising"></span>
+                                Secondary Class
+                            
+                            </a>
+                            
+                            <a class="m-dropdown_subMenu-item">
+                                
+                                <span class="custom-icon--shiny"></span>
+                                Advanced Class
+                            
+                            </a>
+
+                            <div class="divider"></div>
+                            
+                            <a href="/pages/classes/primary-class/Introduction-to-HTML" class="m-dropdown_subMenu-item special-item">Introduction to HTML</a>
+                            <a href="/pages/classes/primary-class/Introduction-to-CSS" class="m-dropdown_subMenu-item special-item">Introduction to CSS</a>
+                            <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="m-dropdown_subMenu-item special-item">The HTML Entrance : Attributes</a>
+                            <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="m-dropdown_subMenu-item special-item">The Tale of CSS: Selectors</a>
+                            <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="m-dropdown_subMenu-item special-item">The Beauty of a Box</a>
+                            <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="m-dropdown_subMenu-item special-item">An Ordinary Life of a Colorist</a>
+
+                       </div>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                       <a href="/pages/find-jobs.html">About</a>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                       <a href="https://discord.gg/zZ8MDVddMR">Community</a>
+
+                    </div>
+                 </nav>
+
+                <!-- <div id="m-menuBar_container">
+
+                    <button id="close_menuBar" class="menuBar-btn solar--close-circle-linear"></button>
+
+                    <ul id="m-menuBar">
+
+                        <li class="m-menuBar_item_container"><a href="">HOME</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
+
+                    </ul>
+
+                </div> -->
+
+                <nav id="m-botNavigation_container">
+
+                    <ul id="m-bot_menuBar">
+
+                        <li class="m-bot_menuBar_item_container"><a href="/"><span class="solar--home-2-linear m-bot_menuBar_item_icon"></span>HOME</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/classes"><span class="hugeicons--course m-bot_menuBar_item_icon"></span>COURSES</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/quizzes"><span class="mynaui--letter-q-square m-bot_menuBar_item_icon"></span>QUIZZES</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/account"><span class="heroicons--user m-bot_menuBar_item_icon"></span>ACCOUNT</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </nav>
+
+            <nav id="fat-navigation">
+
+                <nav id="fat-navigation_container">
+
+                    <!-- <button id="show_menuBar_fat" class="menuBar-btn charm--menu-hamburger"></button> -->
+
+
+                    <nav id="fat-menuBar">
+
+                        <ul id="fat-menuBar_container">
+                            <a href="/" id="fat-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
+
+                            <!-- li*6>a.fat-menuBar_container -->
+                                
+                            <li class="fat-menuBar_itemContainer dropdown-host">
+                                
+                                <a href="/pages/classes/" class="fat-menuBar_item">Explore&nbsp;</a> 
+                                <span class="lsicon--down-filled dropdown-arrow down active"></span>
+                                
+                                <div class="space_container">
+
+                                    <div class="dropdown-content">
+
+                                        <a href="/pages/classes/primary-class/" class="dropdown_item">
+            
+                                            <span class="custom-icon--people"></span>
+                                            Primary Class
+                                            
+                                        </a>
+                                        
+                                        <a href="/pages/classes/secondary-class/" class="dropdown_item">
+                                        
+                                            <span class="custom-icon--rising"></span>
+                                            Secondary Class
+                                        
+                                        </a>
+                                        
+                                        <a href="/pages/classes/advanced-class/" class="dropdown_item">
+                                            
+                                            <span class="custom-icon--shiny"></span>
+                                            Advanced Class
+                                        
+                                        </a>
+
+                                        <div class="divider"></div>
+                            
+                                        <a href="/pages/classes/primary-class/Introduction-to-HTML" class="dropdown_item special-item">Introduction to HTML</a>
+                                        <a href="/pages/classes/primary-class/Introduction-to-CSS" class="dropdown_item special-item">Introduction to CSS</a>
+                                        <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="dropdown_item special-item">The HTML Entrance : Attributes</a>
+                                        <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="dropdown_item special-item">The Tale of CSS: Selectors</a>
+                                        <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="dropdown_item special-item">The Beauty of a Box</a>
+                                        <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="dropdown_item special-item">An Ordinary Life of a Colorist</a>
+            
+                                    </div>
+
+                                </div>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/about" class="fat-menuBar_item">About</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="https://discord.gg/zZ8MDVddMR" class="fat-menuBar_item">Community</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/quizzes" class="fat-menuBar_item">Quizzes</a>
+                                
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <button id="login_btn" class="login_btn">Log in</button>
+                    <button id="signUp_btn" class="signUp_btn">Sign Up</button>
+
+                    <!-- <div id="invisible_div"></div>  -->
+                    <!-- The div act like its name, invisible. it cant be seen even in inspect mode -->
+
+                    <!-- <ul id="fat-nav_menuBar"> -->
+
+                        <!-- <div id="searchBar-container">
+
+                            <input type="text" placeholder="What are you looking for?" id="searchBar">
+                        
+                        </div> -->
+
+                        <!-- <li class="fat-navBar_item_container active_fat-navBar_item"><a href="/">HOME</a></li>
+                        <li class="fat-navBar_item_container inactive-link limited"><a href="">ABOUT</a></li>
+                        <li class="fat-navBar_item_container inactive-link"><a href="">COURSES</a></li>
+                        <li class="fat-navBar_item_container inactive-link"><a href="">QUIZZES</a></li>
+
+                    </ul> -->
+
+                </nav>
+
+                <!-- <div id="fat-menuBar_container">
+
+                    <button id="close_menuBar_fat" class="menuBar-btn solar--close-circle-linear"></button>
+
+                    <ul id="fat-menuBar">
+
+                        <li class="fat-menuBar_item_container"><a href="">HOME</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
+
+                    </ul>
+
+                </div> -->
+
+            </nav>
+
+        </header>
+
+        <div id="m-invisible_div"></div>
+        <!-- <div id="m-second_invisible_div"></div> -->
+
+        <div class="dim-overlay"></div>
+
+        <div id="nothing-division"></div>
+
+        <h1 class="page-heading">Developer Biographies >w<</h1>
+
+        <section id="profile-container">
+
+            <div id="profiles">
+
+                <div class="profile-card">
+
+                    <img src="/assets/images/photo_2024-12-16_00-38-31.jpg" alt="">
+
+                    <div class="bio-text-container">
+
+                        <h3>Linn Myat Thu</h3>
+                        <p>The most try hard member, always want to finish everything within a day. Still, never stay up late, compare to others.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <img src="/assets/images/Image (2).jpeg" alt="">
+
+                    <div class="bio-text-container">
+
+                        <h3>Chaw Kay Khaing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt veniam quos, aliquid facilis ut soluta quis ad!</p>
+
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <img src="/assets/images/image (4).jpeg" alt="">
+
+                    <div class="bio-text-container">
+
+                        <h3>S Mun Seng Tsin</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt veniam quos, aliquid facilis ut soluta quis ad!</p>
+
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <img src="/assets/images/1734288124529.webp" alt="">
+
+                    <div class="bio-text-container">
+
+                        <h3>Nay Yaung Oo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt veniam quos, aliquid facilis ut soluta quis ad!</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    
+        <section id="thepinkbox"></section>
+        
+        <footer>
+
+            <div class="footer-graphic_container">
+
+                <img src="/assets/images/footer-graphics.png" alt="no image was founded">
+
+            </div>
+
+            <div id="content-wrapper">
+
+                <a href="/"><img id="branding" src="/assets/images/branding.png"></a>
+                
+                <ul id="footer-menuBar">
+                    <li class="footer-menuBar-item item4"><a href="/pages/bio">BIO</a></li>                   
+                    <li class="footer-menuBar-item item4"><a href="/pages/app">App</a></li>
+    
+                </ul>
+    
+                <ul id="footer-social_menuBar">
+    
+                    <li class="footer-menuBar-item"><a href=""><span class="bxl--instagram"></span></a></li>
+                    <li class="footer-menuBar-item"><a href=""><span class="bxl--facebook"></span></a></li>
+                    <li class="footer-menuBar-item"><a href=""><span class="proicons--x-twitter"></span></a></li>
+    
+                </ul>
+
+            </div>
+
+            <div id="legal">
+
+                <span>LearnerX © 2024</span>
+                <span>All Creative Rights Protected by LearnerX</span>
+
+            </div>
+
+        </footer>
+
+        <div id="m-bot-invisible_div"></div>
+
+        <script src="/assets/scripts/script.js"></script>
+
+    </body>
+
 </html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game Code Explanation</title>
+    <style>
+        /* Your provided CSS code */
+    </style>
+</head>
+<body>
+    <h1 class="title">Snake Game Code Explanation</h1>
+    <p class="content">This is an implementation of the classic Snake Game using HTML, CSS, and JavaScript. Below is a detailed explanation of how the code works.</p>
+
+    <h2 class="section-title">HTML Structure</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Snake Game&lt;/title&gt;
+    &lt;style&gt;
+        /* CSS code here */
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="game-container"&gt;
+        &lt;div id="game-board"&gt;&lt;/div&gt;
+        &lt;div class="score"&gt;Score: &lt;span id="score"&gt;0&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        /* JavaScript code here */
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h3 class="subsection-title">1. DOCTYPE declaration and HTML setup:</h3>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type as HTML5, which is required for modern web browsers.</li>
+        <li><code>&lt;html lang="en"&gt;</code>: Specifies the language of the document is English.</li>
+        <li><code>&lt;head&gt;</code>: Contains metadata about the document, like character set and viewport settings for responsiveness.</li>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code>: Sets the character encoding to UTF-8, which supports a wide range of characters.</li>
+        <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Ensures the game board adjusts to fit on different screen sizes (for mobile responsiveness).</li>
+        <li><code>&lt;title&gt;Snake Game&lt;/title&gt;</code>: Sets the title of the webpage.</li>
+        <li><code>&lt;style&gt;</code>: This is where all CSS (styling) is defined.</li>
+        <li><code>&lt;script&gt;</code>: This contains JavaScript code that handles the game's logic and interactions.</li>
+    </ul>
+
+    <h3 class="subsection-title">2. Body of the HTML:</h3>
+    <ul>
+        <li><code>&lt;div id="game-container"&gt;</code>: A container that holds the game board and the score display.</li>
+        <li><code>&lt;div id="game-board"&gt;&lt;/div&gt;</code>: The area where the snake moves and the food is placed.</li>
+        <li><code>&lt;div class="score"&gt;Score: &lt;span id="score"&gt;0&lt;/span&gt;&lt;/div&gt;</code>: Displays the score. It starts at 0 and is updated when the snake eats food.</li>
+    </ul>
+
+    <h2 class="section-title">CSS (Styling)</h2>
+    <p class="content">The CSS styles the page to make it look like a simple snake game.</p>
+    <pre><code>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+</code></pre>
+    <p>This applies a global reset: removes default margins and padding from all elements and sets the <code>box-sizing</code> property to <code>border-box</code>, which includes padding and border in the element's total width and height.</p>
+
+    <pre><code>body {
+    background-color: #212121;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+</code></pre>
+    <p><strong>body</strong>: Sets the background color of the page to dark gray, changes the font to Arial, and uses Flexbox to center the game in the middle of the screen both horizontally and vertically (<code>justify-content: center; align-items: center</code>).</p>
+    <p><code>height: 100vh;</code> makes sure the body takes up the full viewport height. <code>color: #fff;</code> changes text color to white.</p>
+
+    <pre><code>#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+</code></pre>
+    <p>This centers the game board (<code>#game-container</code>) within the screen.</p>
+
+    <pre><code>#game-board {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+}
+</code></pre>
+    <p><strong>#game-board</strong>: This is where the game is drawn. It’s 300px by 300px in size.</p>
+    <p><code>display: grid</code>: Uses CSS Grid to divide the area into 10x10 cells (for a total of 100 cells).</p>
+    <p><code>grid-template-columns</code> and <code>grid-template-rows</code>: Create 10 equal-width columns and rows (each 1fr, which means one fraction of the space).</p>
+    <p><code>gap: 1px;</code> ensures a small space between the cells.</p>
+
+    <pre><code>.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #2e2e2e;
+    transition: background-color 0.1s;
+}
+</code></pre>
+    <p><strong>.cell</strong>: Styles each individual grid cell.</p>
+    <p><code>background-color: #2e2e2e;</code>: Sets a dark gray color for the cells.</p>
+    <p><code>transition: background-color 0.1s;</code>: Adds a smooth transition when the color of a cell changes (e.g., when the snake moves or food is placed).</p>
+
+    <pre><code>.snake {
+    background-color: #00ff00;
+}
+</code></pre>
+    <p><strong>.snake</strong>: This class will be applied to the cells occupied by the snake, coloring them green (<code>#00ff00</code>).</p>
+
+    <pre><code>.food {
+    background-color: #ff0000;
+}
+</code></pre>
+    <p><strong>.food</strong>: This class is used to color the food red (<code>#ff0000</code>).</p>
+
+    <pre><code>.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+</code></pre>
+    <p><strong>.game-over</strong>: Displays a "Game Over" message when the game ends, centered on the screen.</p>
+
+    <pre><code>.score {
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+</code></pre>
+    <p><strong>.score</strong>: Styles the score text to appear at the top-left corner of the screen, in white and with a font size of 18px.</p>
+
+    <h2 class="section-title">JavaScript (Game Logic)</h2>
+    <p>Now we dive into the <strong>JavaScript</strong> code that controls the game’s behavior.</p>
+    <pre><code>const board = document.getElementById('game-board');
+const scoreElement = document.getElementById('score');
+const gameOverMessage = document.createElement('div');
+gameOverMessage.classList.add('game-over');
+gameOverMessage.innerHTML = 'Game Over! Press R to Restart';
+</code></pre>
+    <p><strong>board</strong>: Gets the game board element (<code>#game-board</code>).</p>
+    <p><strong>scoreElement</strong>: Gets the score element (<code>#score</code>).</p>
+    <p><strong>gameOverMessage</strong>: Creates a new <code>div</code> that will show the "Game Over" message.</p>
+
+    <pre><code>let snake = [{ x: 2, y: 2 }];
+let direction = { x: 0, y: 0 };
+let food = { x: 5, y: 5 };
+let score = 0;
+</code></pre>
+    <p><strong>snake</strong>: Initializes the snake as an array of cells (start position at <code>x: 2, y: 2</code>).</p>
+    <p><strong>direction</strong>: Defines the initial direction of movement (no movement by default).</p>
+    <p><strong>food</strong>: Places the food at <code>x: 5, y: 5</code>.</p>
+    <p><strong>score</strong>: The score starts at 0.</p>
+
+    <h2 class="section-title">Conclusion</h2>
+    <p class="content">This is a simple yet complete Snake Game. The game is controlled via the arrow keys, and it ends when the snake collides with itself or the edges of the board. By adjusting the size of the grid, colors, or the snake's speed, you can customize the game to your liking.</p>
+</body>
+</html>

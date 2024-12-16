@@ -426,6 +426,8 @@ header {
 
             #login_btn {
 
+                z-index: 99;
+                cursor: pointer;
                 padding: 10px 25px;
                 background-color: #111;
                 color: white;
@@ -438,6 +440,8 @@ header {
 
             #signUp_btn {
 
+                z-index: 99;
+                cursor: pointer;
                 position: absolute;
                 right: 115px;
                 padding: 10px 25px;

@@ -1,381 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Section</title>
-    <link rel="stylesheet" href="/assets/styles/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <style>
-    </style>
-  </head>
-  <body>
-
-  <header>
-
-      <nav id="m-navigation">
-
-          <nav id="m-navigation_container">
-
-              <button class="menuBar-btn charm--menu-hamburger show-m-dropdown_menu_Btn"></button>
-
-              <a href="/" id="m-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
-              <button id="login_btn">Log In</button>
-
-          </nav>
-
-          <nav class="m-dropdown_menu">
-
-              <div class="m-dropdown_menu-item">
-
-                  <a>
-
-                      Explore
-                      <span class="lsicon--down-filled dropdown-arrow down active"></span>
-                      <span class="lsicon--up-filled dropdown-arrow up"></span>
-              
-                  </a>
-
-                  <div class="m-dropdown_subMenu">
-
-                      <a class="m-dropdown_subMenu-item">
-
-                          <span class="custom-icon--people"></span>
-                          Primary Class
-                          
-                      </a>
-                      
-                      <a class="m-dropdown_subMenu-item">
-                      
-                          <span class="custom-icon--rising"></span>
-                          Secondary Class
-                      
-                      </a>
-                      
-                      <a class="m-dropdown_subMenu-item">
-                          
-                          <span class="custom-icon--shiny"></span>
-                          Advanced Class
-                      
-                      </a>
-
-                      <div class="divider"></div>
-                      
-                      <a href="/pages/classes/primary-class/Introduction-to-HTML" class="m-dropdown_subMenu-item special-item">Introduction to HTML</a>
-                      <a href="/pages/classes/primary-class/Introduction-to-CSS" class="m-dropdown_subMenu-item special-item">Introduction to CSS</a>
-                      <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="m-dropdown_subMenu-item special-item">The HTML Entrance : Attributes</a>
-                      <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="m-dropdown_subMenu-item special-item">The Tale of CSS: Selectors</a>
-                      <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="m-dropdown_subMenu-item special-item">The Beauty of a Box</a>
-                      <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="m-dropdown_subMenu-item special-item">An Ordinary Life of a Colorist</a>
-
-                  </div>
-
-              </div>
-
-              <div class="m-dropdown_menu-item">
-
-                  <a href="/pages/find-jobs.html">About</a>
-
-              </div>
-
-              <div class="m-dropdown_menu-item">
-
-                  <a href="https://discord.gg/zZ8MDVddMR">Community</a>
-
-              </div>
-
-              <div class="m-dropdown_menu-item">
-
-                  <a href="/pages/blog.html">Blog</a>
-                  
-              </div>
-
-              </nav>
-
-          <!-- <div id="m-menuBar_container">
-
-              <button id="close_menuBar" class="menuBar-btn solar--close-circle-linear"></button>
-
-              <ul id="m-menuBar">
-
-                  <li class="m-menuBar_item_container"><a href="">HOME</a></li>
-                  <li class="m-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
-                  <li class="m-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
-                  <li class="m-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
-                  <li class="m-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
-
-              </ul>
-
-          </div> -->
-
-          <nav id="m-botNavigation_container">
-
-            <ul id="m-bot_menuBar">
-
-                <li class="m-bot_menuBar_item_container"><a href="/"><span class="solar--home-2-linear m-bot_menuBar_item_icon"></span>HOME</a></li>
-                <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/classes"><span class="hugeicons--course m-bot_menuBar_item_icon"></span>COURSES</a></li>
-                <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/quizzes"><span class="mynaui--letter-q-square m-bot_menuBar_item_icon"></span>QUIZZES</a></li>
-                <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/account"><span class="heroicons--user m-bot_menuBar_item_icon"></span>ACCOUNT</a></li>
-
-            </ul>
-
-          </nav>
-
-      </nav>
-
-      <nav id="fat-navigation">
-
-          <nav id="fat-navigation_container">
-
-              <!-- <button id="show_menuBar_fat" class="menuBar-btn charm--menu-hamburger"></button> -->
-
-
-              <nav id="fat-menuBar">
-
-                  <ul id="fat-menuBar_container">
-                      <a href="/" id="fat-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
-
-                      <!-- li*6>a.fat-menuBar_container -->
-                          
-                      <li class="fat-menuBar_itemContainer dropdown-host">
-                          
-                          <a href="#" class="fat-menuBar_item">Explore&nbsp;</a> 
-                          <span class="lsicon--down-filled dropdown-arrow down active"></span>
-                          
-                          <div class="space_container">
-
-                              <div class="dropdown-content">
-
-                                  <a href="/pages/classes/primary-class/" class="dropdown_item">
-      
-                                      <span class="custom-icon--people"></span>
-                                      Primary Class
-                                      
-                                  </a>
-                                  
-                                  <a href="/pages/classes/secondary-class/" class="dropdown_item">
-                                  
-                                      <span class="custom-icon--rising"></span>
-                                      Secondary Class
-                                  
-                                  </a>
-                                  
-                                  <a href="/pages/classes/advanced-class/" class="dropdown_item">
-                                      
-                                      <span class="custom-icon--shiny"></span>
-                                      Advanced Class
-                                  
-                                  </a>
-
-                                  <div class="divider"></div>
-                      
-                                  <a href="/pages/classes/primary-class/Introduction-to-HTML" class="dropdown_item special-item">Introduction to HTML</a>
-                                  <a href="/pages/classes/primary-class/Introduction-to-CSS" class="dropdown_item special-item">Introduction to CSS</a>
-                                  <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="dropdown_item special-item">The HTML Entrance : Attributes</a>
-                                  <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="dropdown_item special-item">The Tale of CSS: Selectors</a>
-                                  <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="dropdown_item special-item">The Beauty of a Box</a>
-                                  <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="dropdown_item special-item">An Ordinary Life of a Colorist</a>
-      
-                              </div>
-
-                          </div>
-                          
-                      </li>
-                          
-                      <li class="fat-menuBar_itemContainer">
-                          
-                          <a href="/pages/about" class="fat-menuBar_item">About</a>
-                          
-                      </li>
-                          
-                      <li class="fat-menuBar_itemContainer">
-                          
-                          <a href="https://discord.gg/zZ8MDVddMR" class="fat-menuBar_item">Community</a>
-                          
-                      </li>
-                          
-                      <li class="fat-menuBar_itemContainer">
-                          
-                          <a href="/pages/quizzes" class="fat-menuBar_item">Quizzes</a>
-                          
-                      </li>
-                          
-                      <li class="fat-menuBar_itemContainer">
-                          
-                          <a href="/pages/blog" class="fat-menuBar_item">Blog</a>
-                          
-                      </li>
-
-                  </ul>
-
-              </nav>
-
-              <button id="login_btn">Log in</button>
-              <button id="signUp_btn">Sign Up</button>
-
-              <!-- <div id="invisible_div"></div>  -->
-              <!-- The div act like its name, invisible. it cant be seen even in inspect mode -->
-
-              <!-- <ul id="fat-nav_menuBar"> -->
-
-                  <!-- <div id="searchBar-container">
-
-                      <input type="text" placeholder="What are you looking for?" id="searchBar">
-                  
-                  </div> -->
-
-                  <!-- <li class="fat-navBar_item_container active_fat-navBar_item"><a href="/">HOME</a></li>
-                  <li class="fat-navBar_item_container inactive-link limited"><a href="">ABOUT</a></li>
-                  <li class="fat-navBar_item_container inactive-link"><a href="">COURSES</a></li>
-                  <li class="fat-navBar_item_container inactive-link"><a href="">QUIZZES</a></li>
-
-              </ul> -->
-
-          </nav>
-
-          <!-- <div id="fat-menuBar_container">
-
-              <button id="close_menuBar_fat" class="menuBar-btn solar--close-circle-linear"></button>
-
-              <ul id="fat-menuBar">
-
-                  <li class="fat-menuBar_item_container"><a href="">HOME</a></li>
-                  <li class="fat-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
-                  <li class="fat-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
-                  <li class="fat-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
-                  <li class="fat-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
-
-              </ul>
-
-          </div> -->
-
-      </nav>
-
-  </header>
-  <section class="about-section">
-    <div class="container">
-      <div class="about-content">
-        <h2 class="about-heading">About Us</h2>
-        <p class="about-text">
-          We are a team of enthusiastic and driven individuals dedicated to creating impactful projects and bringing ideas to life. Our combined skills and unique backgrounds enable us to collaborate effectively and push boundaries in everything we do. Together, we aim to make a difference and inspire positive change in our community.
-        </p>
-      </div>
-      <div class="d-flex justify-content-center flex-wrap mt-5">
-        <div class="team-member">
-          <img src="image/lmt.webp" alt="Linn Myat Thu" class="team-photo">
-          <p class="team-name">Linn Myat Thu</p>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Autor: @joabson_arley">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <title>Portfolio</title>
+    <link href="assets/img/logo.png" rel="icon" type="image/png">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link href="assets/fonts/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/styles.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark px-5" id="mainNav"
+     style="background-color: rgba(19,25,36,0);">
+     <button class="goBack-btn" onclick="history.back()"><span class="lets-icons--back"></span></button>
+</nav>
+<section id="hero">
+    <div class="d-flex align-items-center px-5" id="box-2">
+        <div class="highlight-clean" id="highlight"
+             style="background-color: rgba(255,255,255,0);color: rgb(255,255,255);">
+            <div class="container">
+                <div class="text-white-50 intro">
+                    <h2 class="text-left" data-aos="fade" data-aos-duration="1000" id="title"
+                        style="color: rgba(255,255,255,0.9);">Year 9 OnCampus</h2>
+                    <h1 class="ml11">
+                        <span class="text-wrapper">
+                            <span class="letters">Project Learner X</span>
+                        </span>
+                    </h1>
+                </div>
+                <div class="text-left buttons" data-aos="fade" data-aos-delay="300" data-aos-duration="1000">
+                    <a class="btn btn-secondary" data-bs-hover-animate="pulse" href="#about" id="button-sb"
+                       role="button"
+                       style="background-color: rgba(221,221,221,0);color: rgb(255,255,255);margin: 0;border: double;border-radius: 30px;">
+                        Learn More
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="team-member">
-          <img src="image/nyo.jpg" alt="Nay Yaung Oo" class="team-photo">
-          <p class="team-name">Nay Yaung Oo</p>
-        </div>
-        <div class="team-member">
-          <img src="image/smun.jpg" alt="S Mun Seng Tsin" class="team-photo">
-          <p class="team-name">S Mun Seng Tsin</p>
-        </div>
-        <div class="team-member">
-          <img src="image/ckk.jpg" alt="Chaw Kay Khaing" class="team-photo">
-          <p class="team-name">Chaw Kay Khaing</p>
-        </div>
-      </div>
-
-      <hr class="my-5">
-
-      <div class="row purpose-section align-items-center mt-4">
-        <div class="col-md-4">
-          <img src="/assets/images/purpose.jpg" alt="Our Purpose Image">
-        </div>
-        <div class="col-md-8">
-          <h4 class="purpose-heading">Our Purpose</h4>
-          <p class="purpose-text">
-            Our purpose is to empower and inspire by providing valuable insights, resources, and support to our audience. Through our projects and initiatives, we seek to make a positive impact, foster growth, and create lasting change. Our mission is built on a foundation of dedication, integrity, and a shared vision for a brighter future.
-          </p>
-        </div>
-      </div>
-
-      <hr class="my-5">
-
-      <div class="row mission-section align-items-center mt-4">
-        <div class="col-md-8">
-          <h4 class="mission-heading">Our Mission</h4>
-          <p class="mission-text">
-            Our mission is to create opportunities for growth and learning through innovative initiatives. We believe in promoting sustainable practices and offering resources that help individuals and communities thrive. By working together, we can build a future where everyone has the opportunity to succeed.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img src="image/mission.webp" alt="Our Mission Image">
-        </div>
-      </div>
-      <hr class="my-5">
-
-  <!-- FAQ Section -->
-  <section class="faq-section">
-    <h2 class="faq-heading">Frequently Asked Questions</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What services do you provide?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            We provide project consulting, creative solutions, and community-driven initiatives designed to inspire and create meaningful change.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            How can I get involved in your projects?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            You can get involved by reaching out through our contact page or participating in our open events. Stay updated by following our social media channels.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Are your services free or paid?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Our basic services are free to the public, but specialized consulting and custom solutions may involve a fee. Contact us for detailed information.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            How can I contact the team for further inquiries?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            You can contact us through our website's contact page, via email, or through any of our social media platforms. We are happy to answer any questions and discuss opportunities for collaboration.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            How do you ensure the quality of your projects?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            We ensure quality by conducting thorough research, involving experienced team members, and continually evaluating our progress against goals.
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+    <section id="transition" style="color: rgb(255,255,255);"></section>
+    <section class="about" id="about">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 class="text-center" data-aos="fade">Rewinding the TIme</h1>
+            <div class="row d-md-flex justify-content-md-center">
+                <div class="col col-md-4 d-none d-lg-block">
+                    <img data-aos="fade" data-aos-duration="800"
+                         src="assets/img/manmobileD.jpg" width="100%"></div>
+                <div class="col text-justify col-md-8">
+                    <p class="lead text-justify" data-aos="fade" data-aos-duration="800">Shortly after the Year 9 OnCampus Monthly Test, specifically the Second Monthly Test, is finally completed, Year 9 students received the Driving Question for ICT PBL. It was 21st of October. The clock, hanged on the very right corner of the wall, was kindly ticking. The hour arms are exactly at the roman number nine. Not long after, all the Year 9 students are already assigned as four groups. I assume everyone was satisfied as no one really complained. To be fair, every group is consist of at least one nerd. Well, I suppose I am very lucky as I got three in my group.<br></p>
+                    <br><p class="lead text-justify" data-aos="fade" data-aos-duration="800">Sure, the whole idea of PBL is exhausting, but I assure you that at the day, everyone will go home with unreplacable meomories.</p>
+                    <br><p class="lead text-justify" data-aos="fade" data-aos-duration="800">How can Year 9 students design an interactive learning platform that uses modern educational tools to teach essential life skills, promote resilience, and offer practical knowledge in a format accessible to young learners?</p>
+                </div>
+            </div>
+        </div>
+        <div class="svg-border-waves text-white">
+            <svg class="wave" fill="#eaeaea" preserveAspectRatio="none" style="pointer-events: none"
+                 viewBox="0 0 1920 75" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="a">
+                        <rect class="a" height="75" width="1920"/>
+                    </clipPath>
+                </defs>
+                <title>wave</title>
+                <g class="b">
+                    <path class="c"
+                          d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"/>
+                </g>
+                <g class="b">
+                    <path class="d"
+                          d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"/>
+                </g>
+                <g class="b">
+                    <path class="d"
+                          d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"/>
+                </g>
+                <g class="b">
+                    <path class="d"
+                          d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 class="text-center" data-aos="fade">The Purpose</h1>
+            <div class="row d-md-flex justify-content-md-center">
+                <div class="col text-justify col-md-8">
+                    <p class="lead text-justify" data-aos="fade" data-aos-duration="800">The definition of the word "issue" : A subject or a problem that need to be solved.<br></p>
+                    <br><p class="lead text-justify" data-aos="fade" data-aos-duration="800">We, the human beings, tend to love solving mystery, solving an issue. We, the Group-1, are one one of them. People nowsday are kept struggling with the Tutorial Hell despite having the interest at programming/coding. It is been an unsovled issue for almost a decade by now. Plus the older generations have already tried solving it as well but failed, uncountable times.<br></p>
+                    <br><p class="lead text-justify" data-aos="fade" data-aos-duration="800">What I found was There is no hundred-percent effective way to escape that Tutorial Hell. People often just titled it as "Unsolvable Issue". And today my team, Group 1, and I am going to against it. We will be proving How can we Y-9 students develop an interactive website to help lower secondary students explore and understand the fundamentals of web development, specifically focusing on HTML and CSS, to enhance their academic achievement and foster a deeper interest in technology?<br></p>
+    
+                </div>
+                <div class="col col-md-4 d-none d-lg-block">
+                    <img data-aos="fade" data-aos-duration="800"
+                         src="assets/img/manmobileD.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="svg-border-waves text-white">
+            <svg class="wave" fill="#eaeaea" preserveAspectRatio="none" style="pointer-events: none"
+                 viewBox="0 0 1920 75" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="a">
+                        <rect class="a" height="75" width="1920"/>
+                    </clipPath>
+                </defs>
+                <title>wave</title>
+                <g class="b">
+                    <path class="c"
+                          d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"/>
+                </g>
+                <g class="b">
+                    <path class="d"
+                          d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"/>
+                </g>
+                <g class="b">
+                    <path class="d"
+                          d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"/>
+                </g>
+                <g class="b">
+                    <path class="d"
+                          d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+<!-- <section id="transition" style="color: rgb(255,255,255);"></section>
+<section id="about">
+    <div class="container" style="color: rgb(255,255,255);">
+        <h1 class="text-center" data-aos="fade">Quem sou</h1>
+        <div class="row d-md-flex justify-content-md-center">
+            <div class="col col-md-4 d-none d-lg-block">
+                <img data-aos="fade" data-aos-duration="800"
+                     src="assets/img/manmobileD.jpg" width="100%"></div>
+            <div class="col text-justify col-md-8">
+                <p class="lead text-justify" data-aos="fade" data-aos-duration="800">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nulla a massa maximus, dictum nisl vel, pellentesque purus. Ut
+                    vitae interdum neque. Duis luctus ipsum turpis, eget consequat elit volutpat nec. Nunc sit amet
+                    enim sem. Integer
+                    porta ante id consequat lacinia.<br></p>
+                <p class="lead text-justify" data-aos="fade" data-aos-duration="800">Praesent tincidunt sollicitudin
+                    dui, eget scelerisque sem egestas eu. Maecenas vitae dapibus ligula. Donec nisl tortor,
+                    fringilla in commodo placerat, porttitor sed neque. Nullam ornare lorem vitae nibh efficitur, a
+                    commodo lorem accumsan.<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="svg-border-waves text-white">
+        <svg class="wave" fill="#eaeaea" preserveAspectRatio="none" style="pointer-events: none"
+             viewBox="0 0 1920 75" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <clipPath id="a">
+                    <rect class="a" height="75" width="1920"/>
+                </clipPath>
+            </defs>
+            <title>wave</title>
+            <g class="b">
+                <path class="c"
+                      d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"/>
+            </g>
+            <g class="b">
+                <path class="d"
+                      d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"/>
+            </g>
+            <g class="b">
+                <path class="d"
+                      d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"/>
+            </g>
+            <g class="b">
+                <path class="d"
+                      d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"/>
+            </g>
+        </svg>
+    </div>
+</section>
+<section class="features-clean" id="services" style="background-color: rgba(255,255,255,0.91);">
+    <div class="container">
+        <div class="intro" data-aos="fade">
+            <h2 class="text-center">Meus serviços</h2>
+            <p class="lead text-center">Nunc luctus in metus eget fringilla.</p>
+        </div>
+        <div class="row text-center features" data-aos="fade">
+            <div class="col-sm-6 col-lg-4 item" data-bs-hover-animate="pulse"><i class="fa fa-bar-chart-o icon"></i>
+                <h3 class="name">Serviços de marketing</h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.&nbsp;</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-bs-hover-animate="pulse"><i class="fa fa-code icon"></i>
+                <h3 class="name">Programador</h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-bs-hover-animate="pulse"><i
+                    class="fas fa-camera-retro icon"></i>
+                <h3 class="name">Fotografias</h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-bs-hover-animate="pulse"><i class="fa fa-desktop icon"></i>
+                <h3 class="name">Programador</h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-bs-hover-animate="pulse"><i
+                    class="fas fa-shopping-bag icon"></i>
+                <h3 class="name"><strong>Designer&nbsp;</strong>Web</h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-bs-hover-animate="pulse"><i class="fa fa-tasks icon"></i>
+                <h3 class="name"><strong>Designer&nbsp;</strong>UI/UX</h3>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="d-xl-flex justify-content-xl-center align-items-xl-center" data-bs-parallax-bg="true" id="parallax"
+     style="height: auto;background-image: url(assets/img/lago.jpg);background-position: center;background-size: cover;filter: blur(0px) brightness(80%) grayscale(100%);">
+    <div class="row" style="padding: 30px;">
+        <div class="col text-center col-12 col-md-4" data-aos="fade"><i class="fa fa-check icon"></i>
+            <h1 style="color: rgb(255,255,255);">20</h1>
+            <h3 style="color: rgb(255,255,255);">Trabalhos completos</h3>
+        </div>
+        <div class="col text-center col-12 col-md-4" data-aos="fade"><i class="fas fa-users icon"></i>
+            <h1 style="color: rgb(255,255,255);">135</h1>
+            <h3 style="color: rgb(255,255,255);">Clientes</h3>
+        </div>
+        <div class="col text-center col-12 col-md-4" data-aos="fade"><i class="fa fa-check icon"></i>
+            <h1 style="color: rgb(255,255,255);">20</h1>
+            <h3 style="color: rgb(255,255,255);">Trabalhos completos</h3>
+        </div>
+    </div>
+</div>
+<section id="portfolio">
+    <div class="container">
+        <div class="intro" data-aos="fade" style="color: rgb(255,255,255);">
+            <h2 class="text-center" style="margin-top: 50px;">Portfólio</h2>
+            <p class="lead text-center" style="margin-top: 20px;">Nunc luctus in metus eget fringilla.</p>
+        </div>
+    </div>
+    <div class="carousel slide portfolio_col_carousel_wrapper swipe_x ps_easeOutCirc"
+         data-duration="2000" data-interval="6000"
+         data-pause="hover" data-ride="carousel" id="portfolio_3_columns_carousel"
+         style="background-repeat: no-repeat;background-size: auto;background-position: center;background-color: rgba(255,255,255,0);">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 portfolio_col_item_image"><img
+                            alt="sm_slider_01" class="img-hvr-scale img-fluid"
+                            src="assets/img/coffee-2737047_1920.jpg" style="filter: blur(0px);">
+                        <div class="portfolio_col_item_caption">
+                            <h2 class="portfolio-text">Lorem ipsum dolor</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius
+                                facilisis eros.</p><a data-bs-hover-animate="pulse" href="#">Ler mais</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 portfolio_col_item_image"><img
+                            alt="sm_slider_02" class="img-hvr-scale img-fluid"
+                            src="assets/img/coffee-2737047_1920.jpg">
+                        <div class="portfolio_col_item_caption">
+                            <h2><strong>Lorem ipsum dolor</strong></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius
+                                facilisis eros.</p><a data-bs-hover-animate="pulse" href="#">Ler mais</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 portfolio_col_item_image"><img
+                            alt="sm_slider_03" class="img-hvr-scale img-fluid"
+                            src="assets/img/coffee-2737047_1920.jpg">
+                        <div class="portfolio_col_item_caption">
+                            <h2><strong>Lorem ipsum dolor</strong></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius
+                                facilisis eros.</p><a data-bs-hover-animate="pulse" href="#">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 portfolio_col_item_image"><img
+                            alt="sm_slider_01" class="img-hvr-scale img-fluid"
+                            src="assets/img/coffee-2737047_1920.jpg" style="filter: blur(0px);">
+                        <div class="portfolio_col_item_caption">
+                            <h2 class="portfolio-text">Lorem ipsum dolor</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius
+                                facilisis eros.</p><a data-bs-hover-animate="pulse" href="#">Ler mais</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 portfolio_col_item_image"><img
+                            alt="sm_slider_02" class="img-hvr-scale img-fluid"
+                            src="assets/img/coffee-2737047_1920.jpg">
+                        <div class="portfolio_col_item_caption">
+                            <h2><strong>Lorem ipsum dolor</strong></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius
+                                facilisis eros.</p><a data-bs-hover-animate="pulse" href="#">Ler mais</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 portfolio_col_item_image"><img
+                            alt="sm_slider_03" class="img-hvr-scale img-fluid"
+                            src="assets/img/coffee-2737047_1920.jpg">
+                        <div class="portfolio_col_item_caption">
+                            <h2><strong>Lorem ipsum dolor</strong></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius
+                                facilisis eros.</p><a data-bs-hover-animate="pulse" href="#">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev portfolio_col_carousel_control_left"
+           data-slide="prev" href="#portfolio_3_columns_carousel"><i class="fa fa-angle-left"></i></a><a
+            class="carousel-control-next portfolio_col_carousel_control_right" data-slide="next"
+            href="#portfolio_3_columns_carousel"><i class="fa fa-angle-right"></i></a>
+    </div>
+    <div class="svg-border-angled text-white">
+        <svg class="angled" fill="#282d32" preserveAspectRatio="none" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+            <polygon points="0,100 100,0 100,100"/>
+        </svg>
+    </div>
+</section> -->
+<!-- <div class="footer-dark" id="contacts">
+    <footer>
+        <form method="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Contate-me</h2>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-10">
+                        <div class="form-group">
+                            <input autocomplete="off" class="form-control" inputmode="latin-name"
+                                   minlength="6" name="name"
+                                   placeholder="Nome" required=""
+                                   style="background-color: transparent; color: white;"
+                                   type="text">
+                        </div>
+                        <div class="form-group">
+                            <input autocomplete="off" class="form-control" inputmode="email" name="email"
+                                   placeholder="Email" required="" style="background-color: transparent; color: white;"
+                                   type="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea autocomplete="off" class="form-control" inputmode="latin-prose"
+                                      minlength="10"
+                                      name="message" placeholder="Menssagem" required="" rows="14"
+                                      style="background-color: transparent; color: white;">
 
+                            </textarea>
+                        </div>
+                        <div class="form-group" style="text-align: -webkit-center;">
+                            <button class="btn btn-transparent btn-block"
+                                    style="color: white;  border-radius: 30px; border-color: white;"
+                                    type="submit">Enviar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2" style="text-align: justify;">
+                        <div class="row d-lg-none">
+                            <div class="col-12">
+                                <hr style="background-color: white;"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 col-lg-12">
+                                <h3>Descrição</h3>
+                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
+                                    vehicula
+                                    rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                                    dictum
+                                    vel in justo.
+                                </p>
+                            </div>
+                            <div class="col-md-5 col-lg-12">
+                                <h3 class="mt-4">Links</h3>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="background-color: white;"/>
+                <div class="row">
+                    <div class="col-12 item social">
+                        <a href="#"><i class="fa fa-facebook icon"></i></a>
+                        <a href="#"><i class="icon fa fa-twitter"></i></a>
+                        <a href="https://github.com/Joabsonlg" target="_blank"><i class="icon fa fa-github"></i></a>
+                        <a href="https://www.instagram.com/joabson_arley/" target="_blank"><i
+                                class="icon fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/joabson-arley-667329191/" target="_blank"><i
+                                class="icon fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">Nome © 2020</p>
+            </div>
+        </form>
+    </footer>
+</div> -->
+<a class="btn btn-light btn-lg back-to-top" href="#" id="back-to-top" role="button">
+    <i class="fas fa-chevron-up"></i>
+</a>
 
-  </body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+    $(window).scroll(function () {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+    });
+    $('nav a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top;
+
+        $('html, body').animate({
+            scrollTop: targetOffset - 100
+        }, 500);
+    });
+    $('#button-sb').on('click', function (e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top;
+        $('html, body').animate({
+            scrollTop: targetOffset - 100
+        }, 500);
+    })
+</script>
+<script src="assets/js/scripts.js"></script>
+</body>
+
 </html>

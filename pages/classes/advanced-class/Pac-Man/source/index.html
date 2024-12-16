@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/assets/styles/css/main.css">
+
+        <link rel="icon" href="/assets/images/favicon-32.png">
+        <title>Online Code Editor</title>
+    </head>
+    <body>
+
+        <header>
+
+            <nav id="m-navigation">
+
+                <nav id="m-navigation_container">
+
+                    <button class="menuBar-btn charm--menu-hamburger show-m-dropdown_menu_Btn"></button>
+
+                    <a href="/" id="m-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
+                    <button id="login_btn" class="login_btn">Log In</button>
+
+                </nav>
+
+                <nav class="m-dropdown_menu">
+
+                    <div class="m-dropdown_menu-item">
+
+                        <a>
+
+                            Explore
+                            <span class="lsicon--down-filled dropdown-arrow down active"></span>
+                            <span class="lsicon--up-filled dropdown-arrow up"></span>
+                    
+                        </a>
+
+                       <div class="m-dropdown_subMenu">
+
+                            <a class="m-dropdown_subMenu-item">
+
+                                <span class="custom-icon--people"></span>
+                                Primary Class
+                                
+                            </a>
+                            
+                            <a class="m-dropdown_subMenu-item">
+                            
+                                <span class="custom-icon--rising"></span>
+                                Secondary Class
+                            
+                            </a>
+                            
+                            <a class="m-dropdown_subMenu-item">
+                                
+                                <span class="custom-icon--shiny"></span>
+                                Advanced Class
+                            
+                            </a>
+
+                            <div class="divider"></div>
+                            
+                            <a href="/pages/classes/primary-class/Introduction-to-HTML" class="m-dropdown_subMenu-item special-item">Introduction to HTML</a>
+                            <a href="/pages/classes/primary-class/Introduction-to-CSS" class="m-dropdown_subMenu-item special-item">Introduction to CSS</a>
+                            <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="m-dropdown_subMenu-item special-item">The HTML Entrance : Attributes</a>
+                            <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="m-dropdown_subMenu-item special-item">The Tale of CSS: Selectors</a>
+                            <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="m-dropdown_subMenu-item special-item">The Beauty of a Box</a>
+                            <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="m-dropdown_subMenu-item special-item">An Ordinary Life of a Colorist</a>
+
+                       </div>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                       <a href="/pages/find-jobs.html">About</a>
+
+                    </div>
+
+                    <div class="m-dropdown_menu-item">
+
+                       <a href="https://discord.gg/zZ8MDVddMR">Community</a>
+
+                    </div>
+                 </nav>
+
+                <!-- <div id="m-menuBar_container">
+
+                    <button id="close_menuBar" class="menuBar-btn solar--close-circle-linear"></button>
+
+                    <ul id="m-menuBar">
+
+                        <li class="m-menuBar_item_container"><a href="">HOME</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
+                        <li class="m-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
+
+                    </ul>
+
+                </div> -->
+
+                <nav id="m-botNavigation_container">
+
+                    <ul id="m-bot_menuBar">
+
+                        <li class="m-bot_menuBar_item_container"><a href="/"><span class="solar--home-2-linear m-bot_menuBar_item_icon"></span>HOME</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/courses.html"><span class="hugeicons--course m-bot_menuBar_item_icon"></span>COURSES</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/quizzes.html"><span class="mynaui--letter-q-square m-bot_menuBar_item_icon"></span>QUIZZES</a></li>
+                        <li class="m-bot_menuBar_item_container inactive_view"><a href="/pages/account.html"><span class="heroicons--user m-bot_menuBar_item_icon"></span>ACCOUNT</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </nav>
+
+            <nav id="fat-navigation">
+
+                <nav id="fat-navigation_container">
+
+                    <!-- <button id="show_menuBar_fat" class="menuBar-btn charm--menu-hamburger"></button> -->
+
+
+                    <nav id="fat-menuBar">
+
+                        <ul id="fat-menuBar_container">
+                            <a href="/" id="fat-nav_branding"><img id="logo" src="/assets/images/branding.png" alt=""></a>
+
+                            <!-- li*6>a.fat-menuBar_container -->
+                                
+                            <li class="fat-menuBar_itemContainer dropdown-host">
+                                
+                                <a href="/pages/classes/" class="fat-menuBar_item">Explore&nbsp;</a> 
+                                <span class="lsicon--down-filled dropdown-arrow down active"></span>
+                                
+                                <div class="space_container">
+
+                                    <div class="dropdown-content">
+
+                                        <a href="/pages/classes/primary-class/" class="dropdown_item">
+            
+                                            <span class="custom-icon--people"></span>
+                                            Primary Class
+                                            
+                                        </a>
+                                        
+                                        <a href="/pages/classes/secondary-class/" class="dropdown_item">
+                                        
+                                            <span class="custom-icon--rising"></span>
+                                            Secondary Class
+                                        
+                                        </a>
+                                        
+                                        <a href="/pages/classes/advanced-class/" class="dropdown_item">
+                                            
+                                            <span class="custom-icon--shiny"></span>
+                                            Advanced Class
+                                        
+                                        </a>
+
+                                        <div class="divider"></div>
+                            
+                                        <a href="/pages/classes/primary-class/Introduction-to-HTML" class="dropdown_item special-item">Introduction to HTML</a>
+                                        <a href="/pages/classes/primary-class/Introduction-to-CSS" class="dropdown_item special-item">Introduction to CSS</a>
+                                        <a href="/pages/classes/primary-class/The-HTML-Entrance-Attributes" class="dropdown_item special-item">The HTML Entrance : Attributes</a>
+                                        <a href="/pages/classes/primary-class/The-Tale-of-CSS-Selectors" class="dropdown_item special-item">The Tale of CSS: Selectors</a>
+                                        <a href="/pages/classes/primary-class/The-Beauty-of-a-Box" class="dropdown_item special-item">The Beauty of a Box</a>
+                                        <a href="/pages/classes/secondary-class/An-Ordinary-Life-of-a-Colorist" class="dropdown_item special-item">An Ordinary Life of a Colorist</a>
+            
+                                    </div>
+
+                                </div>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/about" class="fat-menuBar_item">About</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="https://discord.gg/zZ8MDVddMR" class="fat-menuBar_item">Community</a>
+                                
+                            </li>
+                                
+                            <li class="fat-menuBar_itemContainer">
+                                
+                                <a href="/pages/quizzes" class="fat-menuBar_item">Quizzes</a>
+                                
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <button id="login_btn" class="login_btn">Log in</button>
+                    <button id="signUp_btn" class="signUp_btn">Sign Up</button>
+
+                    <!-- <div id="invisible_div"></div>  -->
+                    <!-- The div act like its name, invisible. it cant be seen even in inspect mode -->
+
+                    <!-- <ul id="fat-nav_menuBar"> -->
+
+                        <!-- <div id="searchBar-container">
+
+                            <input type="text" placeholder="What are you looking for?" id="searchBar">
+                        
+                        </div> -->
+
+                        <!-- <li class="fat-navBar_item_container active_fat-navBar_item"><a href="/">HOME</a></li>
+                        <li class="fat-navBar_item_container inactive-link limited"><a href="">ABOUT</a></li>
+                        <li class="fat-navBar_item_container inactive-link"><a href="">COURSES</a></li>
+                        <li class="fat-navBar_item_container inactive-link"><a href="">QUIZZES</a></li>
+
+                    </ul> -->
+
+                </nav>
+
+                <!-- <div id="fat-menuBar_container">
+
+                    <button id="close_menuBar_fat" class="menuBar-btn solar--close-circle-linear"></button>
+
+                    <ul id="fat-menuBar">
+
+                        <li class="fat-menuBar_item_container"><a href="">HOME</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">ABOUT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">CONTACT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">ACCOUNT</a></li>
+                        <li class="fat-menuBar_item_container inactive_view"><a href="">DOWNLOAD</a></li>
+
+                    </ul>
+
+                </div> -->
+
+            </nav>
+
+        </header>
+
+        <div id="m-invisible_div"></div>
+        <div class="dim-overlay"></div>
+
+        <h1 id="editor_heading">Run it yourself Editor</h1>
+
+        <div id="codeEditor-container">
+
+            <main id="codeEditor">
+
+                <header id="editorHeader">
+
+                    <div class="code-header">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+        
+                        <div class="button-container">
+                            <button onclick="runCode()">Run Code</button>
+                        </div>
+        
+                    </div>
+
+                </header>
+
+                <div class="container">
+                    <div class="editor">
+                        <div class="line_container">
+                            <div class="line"></div>
+                            <h2>HTML</h2>
+                        </div>
+                        <textarea id="htmlCode" placeholder="Write your HTML code here...">
+                            <div id="score">Score: 0</div>
+                            <div id="winMessage">You Won! 🎉</div>
+                            <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+                        </textarea>
+                    </div>
+                    <div class="editor">
+                        <div class="line_container">
+                            <div class="line"></div>
+                            <h2>CSS</h2>
+                        </div>
+                        <textarea id="cssCode" placeholder="Write your CSS code here...">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#game-board {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #2e2e2e;
+    transition: background-color 0.1s;
+}
+
+.snake {
+    background-color: #00ff00;
+}
+
+.food {
+    background-color: #ff0000;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.score {
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}</textarea>
+                    </div>
+                    <div class="editor">
+                        <div class="line_container">
+                            <div class="line"></div>
+                            <h2>JavaScript</h2>
+                        </div>
+                        <textarea id="jsCode" placeholder="Write your JavaScript code here...">
+                            
+                            const canvas = document.getElementById('gameCanvas');
+                            const ctx = canvas.getContext('2d');
+                            const scoreElement = document.getElementById('score');
+                            const winMessage = document.getElementById('winMessage');
+                    
+                            const gridSize = 20;
+                            const rows = canvas.height / gridSize;
+                            const cols = canvas.width / gridSize;
+                    
+                            let score = 0;
+                    
+                            const pacman = {
+                                x: 1,
+                                y: 1,
+                                size: gridSize,
+                                direction: 'right'
+                            };
+                    
+                            const ghosts = [
+                                { x: 18, y: 1, color: 'red', direction: 'left' },
+                                { x: 18, y: 18, color: 'pink', direction: 'up' }
+                            ];
+                    
+                            const dots = [];
+                            for (let i = 0; i < rows; i++) {
+                                for (let j = 0; j < cols; j++) {
+                                    if (i === 1 && j === 1) continue; // Avoid placing dot on Pac-Man's start position
+                                    dots.push({ x: j, y: i });
+                                }
+                            }
+                    
+                            function drawPacman() {
+                                ctx.fillStyle = 'yellow';
+                                ctx.beginPath();
+                                const startAngle = pacman.direction === 'right' ? 0.25 * Math.PI
+                                                : pacman.direction === 'left' ? 1.25 * Math.PI
+                                                : pacman.direction === 'up' ? 1.75 * Math.PI
+                                                : 0.75 * Math.PI;
+                                const endAngle = pacman.direction === 'right' ? 1.75 * Math.PI
+                                              : pacman.direction === 'left' ? 0.75 * Math.PI
+                                              : pacman.direction === 'up' ? 1.25 * Math.PI
+                                              : 0.25 * Math.PI;
+                                ctx.arc(
+                                    pacman.x * gridSize + gridSize / 2,
+                                    pacman.y * gridSize + gridSize / 2,
+                                    gridSize / 2,
+                                    startAngle,
+                                    endAngle
+                                );
+                                ctx.lineTo(pacman.x * gridSize + gridSize / 2, pacman.y * gridSize + gridSize / 2);
+                                ctx.fill();
+                            }
+                    
+                            function drawDots() {
+                                ctx.fillStyle = 'white';
+                                dots.forEach(dot => {
+                                    ctx.beginPath();
+                                    ctx.arc(
+                                        dot.x * gridSize + gridSize / 2,
+                                        dot.y * gridSize + gridSize / 2,
+                                        gridSize / 8,
+                                        0,
+                                        2 * Math.PI
+                                    );
+                                    ctx.fill();
+                                });
+                            }
+                    
+                            function drawGhosts() {
+                                ghosts.forEach(ghost => {
+                                    ctx.fillStyle = ghost.color;
+                                    ctx.beginPath();
+                                    ctx.arc(
+                                        ghost.x * gridSize + gridSize / 2,
+                                        ghost.y * gridSize + gridSize / 2,
+                                        gridSize / 2,
+                                        0,
+                                        2 * Math.PI
+                                    );
+                                    ctx.fill();
+                                });
+                            }
+                    
+                            function movePacman() {
+                                if (pacman.direction === 'right') pacman.x++;
+                                else if (pacman.direction === 'left') pacman.x--;
+                                else if (pacman.direction === 'up') pacman.y--;
+                                else if (pacman.direction === 'down') pacman.y++;
+                    
+                                if (pacman.x < 0) pacman.x = cols - 1;
+                                if (pacman.x >= cols) pacman.x = 0;
+                                if (pacman.y < 0) pacman.y = rows - 1;
+                                if (pacman.y >= rows) pacman.y = 0;
+                            }
+                    
+                            function moveGhosts() {
+                                ghosts.forEach(ghost => {
+                                    if (ghost.direction === 'left') ghost.x--;
+                                    else if (ghost.direction === 'right') ghost.x++;
+                                    else if (ghost.direction === 'up') ghost.y--;
+                                    else if (ghost.direction === 'down') ghost.y++;
+                    
+                                    if (ghost.x < 0) ghost.x = cols - 1;
+                                    if (ghost.x >= cols) ghost.x = 0;
+                                    if (ghost.y < 0) ghost.y = rows - 1;
+                                    if (ghost.y >= rows) ghost.y = 0;
+                    
+                                    // Change direction randomly
+                                    if (Math.random() < 0.1) {
+                                        const directions = ['left', 'right', 'up', 'down'];
+                                        ghost.direction = directions[Math.floor(Math.random() * directions.length)];
+                                    }
+                                });
+                            }
+                    
+                            function checkDotCollision() {
+                                for (let i = 0; i < dots.length; i++) {
+                                    if (dots[i].x === pacman.x && dots[i].y === pacman.y) {
+                                        dots.splice(i, 1);
+                                        score++;
+                                        scoreElement.textContent = `Score: ${score}`;
+                                        break;
+                                    }
+                                }
+                    
+                                if (dots.length === 0) {
+                                    winMessage.style.display = 'block';
+                                    cancelAnimationFrame(animationFrameId);
+                                }
+                            }
+                    
+                            function checkGhostCollision() {
+                                ghosts.forEach(ghost => {
+                                    if (ghost.x === pacman.x && ghost.y === pacman.y) {
+                                        winMessage.textContent = 'Game Over! 😢';
+                                        winMessage.style.display = 'block';
+                                        cancelAnimationFrame(animationFrameId);
+                                    }
+                                });
+                            }
+                    
+                            let animationFrameId;
+                            function gameLoop() {
+                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    
+                                drawDots();
+                                drawGhosts();
+                                movePacman();
+                                moveGhosts();
+                                drawPacman();
+                                checkDotCollision();
+                                checkGhostCollision();
+                    
+                                animationFrameId = setTimeout(() => {
+                                    requestAnimationFrame(gameLoop);
+                                }, 150); // Slower speed
+                            }
+                    
+                            window.addEventListener('keydown', (e) => {
+                                if (e.key === 'ArrowRight' && pacman.direction !== 'left') pacman.direction = 'right';
+                                if (e.key === 'ArrowLeft' && pacman.direction !== 'right') pacman.direction = 'left';
+                                if (e.key === 'ArrowUp' && pacman.direction !== 'down') pacman.direction = 'up';
+                                if (e.key === 'ArrowDown' && pacman.direction !== 'up') pacman.direction = 'down';
+                            });
+                    
+                            gameLoop();</textarea>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+        
+        <footer>
+
+            <div class="footer-graphic_container">
+
+                <img src="/assets/images/footer-graphics.png" alt="no image was founded">
+
+            </div>
+
+            <div id="content-wrapper">
+
+                <a href="/"><img id="branding" src="/assets/images/branding.png"></a>
+                
+                <ul id="footer-menuBar">
+                    <li class="footer-menuBar-item item4"><a href="/pages/bio">BIO</a></li>                   
+                    <li class="footer-menuBar-item item4"><a href="/pages/app">App</a></li>
+    
+                </ul>
+    
+                <ul id="footer-social_menuBar">
+    
+                    <li class="footer-menuBar-item"><a href=""><span class="bxl--instagram"></span></a></li>
+                    <li class="footer-menuBar-item"><a href=""><span class="bxl--facebook"></span></a></li>
+                    <li class="footer-menuBar-item"><a href=""><span class="proicons--x-twitter"></span></a></li>
+    
+                </ul>
+
+            </div>
+
+            <div id="legal">
+
+                <span>LearnerX © 2024</span>
+                <span>All Creative Rights Protected by LearnerX</span>
+
+            </div>
+
+        </footer>
+
+        <div id="m-bot-invisible_div"></div>
+
+        <script src="/assets/scripts/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,220 @@
+#editor_heading {
+
+    text-align: center;
+    padding: 40px;
+    padding-top: 80px;
+    font-family: "JetBrainsMono";
+    font-weight: 500;
+
+    @media screen and (max-width: 510px) {
+        
+        display: none;
+
+    }
+
+}
+
+#codeEditor-container {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 29px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 480px) {
+        
+        padding: 0;
+
+    }
+
+    #codeEditor {
+        padding: 100px 0;
+        display: flex;
+        width: 100%;
+        max-width: 1500px;
+        flex-direction: column;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding-top: 0;
+        background: rgba(0, 0, 0, 0.9);
+        background-image: url(/assets/images/codeEditor_banner.png);
+        background-size: contain;
+        background-position: center;
+
+        @media (max-width: 1024px) {
+
+            background-image: none;
+
+        }
+    
+        #editorHeader {
+            background: rgb(0, 0, 0);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+    
+            div {
+                &:first-child {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+    
+                    span {
+                        background: #e74c3c;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        margin-right: 10px;
+    
+                        &:nth-child(2) {
+                            background: #f1c40f;
+                        }
+    
+                        &:nth-child(3) {
+                            background: #2ecc71;
+                        }
+                    }
+                }
+
+                .button-container {
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+    
+                    button {
+                        background-color: rgba(0, 0, 0, 0);
+                        color: white;
+                        font-size: 1.2em;
+                        border: none;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        font-family: "JetBrainsMono";
+                
+                        &:hover {
+                            transform: scale(1.05);
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }        
+    
+        }
+    
+        .container {
+            display: flex;
+            height: 100%;
+            flex-grow: 1;
+            justify-content: space-evenly;
+            align-items: stretch;
+            padding: 20px;
+            overflow: hidden;
+    
+            .editor {
+                background: rgba(0, 0, 0, 0);
+                border: 1px solid white;
+                border-radius: 8px;
+                box-shadow: 0 0 5px rgba(234, 76, 137, 0.1);
+                width: 30%;
+                margin: 0 10px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.15s ease;
+                background-image: url(/assets/images/codeEditor_banner.png);
+                background-position: -300px 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                @media (min-width: 1024px) {
+
+                    background-image: none;
+
+                }
+        
+                .line_container {
+        
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    margin-bottom: 20px;
+        
+                    h2 {
+                            
+                        font-family: "JetBrainsMono";
+                        padding: 5px 40px;
+                        text-align: center;
+                        background-color: #191919;
+                        font-size: 1em;
+                        z-index: 1;
+                        color: #ffffff;
+                        font-weight: 500;
+                        border: 3px solid #ffffff;
+                        border-radius: 15px;
+                
+                    }
+                
+                    .line {
+                
+                        background-color: rgb(255, 255, 255);
+                        width: 100%;
+                        top: 1.5em;
+                        height: 3px;
+                        position: absolute;
+                
+                    }
+        
+                }
+        
+                &:hover {
+                    transform: scale(1.01);
+                }
+        
+                textarea {
+                    background: rgba(0, 0, 0, 0.39);
+                    width: 100%;
+                    height: 300px;
+                    padding: 25px;
+                    font-family: 'JetBrainsMono', 'Courier New', Courier, monospace;
+                    font-size: 16px;
+                    border: 3px solid #fff;
+                    border-radius: 8px;
+                    resize: none;
+                    color: #fff;
+                    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        
+                    &:focus {
+                        
+                        border-color: #fff;
+                    }
+                }
+            }
+        }
+    
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+        
+                .editor {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+    }
+
+}

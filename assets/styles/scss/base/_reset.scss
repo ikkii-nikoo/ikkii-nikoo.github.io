@@ -28,3 +28,19 @@ a {
     text-decoration: none;
 
 }
+
+.page-heading {
+
+    text-align: center;
+    padding: 40px;
+    padding-top: 80px;
+    font-family: "JetBrainsMono";
+    font-weight: 500;
+
+    @media screen and (max-width: 510px) {
+        
+        display: none;
+
+    }
+
+}
